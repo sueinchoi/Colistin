@@ -3,6 +3,7 @@ library(readxl)
 library(NonCompart)
 library(lubridate)
 library(zoo)
+library(plotly)
 
 ########### Dosing info ########
 
@@ -45,10 +46,11 @@ data_time_tidy_ss <- data_time_tidy %>%
     mutate(TAD = time_length(interval(SSTART, DATETIME), "hour"))   
 
 data_time_tidy_ss %>%
-    filter(ID == 19)
+    filter(ID == 2)
 ########## Plot #########
 
-plot_ss <- data_time_tidy_ss %>%
+plot_ss <- data_time_ss_clean %>%
+    filter(MDV == 0) %>%
     filter(SS == 1) %>%
     ggplot(aes(x = TAD, y = DV, col = as.factor(ID))) +
     geom_point() +
@@ -57,8 +59,13 @@ plot_ss <- data_time_tidy_ss %>%
 
 ggplotly(p = plot_ss)
 
-library(plotly)
-install.packages('plotly')
+data_time_ss_clean <- data_time_tidy_ss %>%
+    filter(!(ID == 7 & TAD == 24 & SS ==0)) %>%
+    filter(!(ID == 17 & TAD == 12 & SS == 1)) %>%
+    filter(!(ID == 19 & TAD == 11)) %>%
+    filter(!(ID == 19 & TAD == 0 & SS == 1))
+
+
 # Dosing info로 추후 업데이트 예정 
 
 cleanfun <- function(dataframes) {
