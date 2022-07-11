@@ -3,49 +3,85 @@ library(readxl)
 library(NonCompart)
 library(lubridate)
 library(zoo)
+library(plotly)
 
 ########### Dosing info ########
 
 Dose <- c(300, 210, 190, 300, 250)
 
 
-########### PK data #########
-free_colistinA <- read_excel('Data/colistin_pk_1st.xlsx', range = 'A6:J20')
-free_colistinB <- read_excel("Data/colistin_pk_1st.xlsx", range = "M6:V20")
-Total_colistinA <- read_excel("Data/colistin_pk_1st.xlsx", range = "A29:J43")
-Total_colistinB <- read_excel("Data/colistin_pk_1st.xlsx", range = "M29:V43")
-Total_CMS <- read_excel("Data/colistin_pk_1st.xlsx", range = "A69:J83")
+########## PK data ##########
+
+data <- read_excel('Data/CRF2.xlsx')
+
+data_time <- data %>%
+    mutate(DATETIME = str_replace(DATETIME, '오후', 'pm'), DATETIME = str_replace(DATETIME, '오전', 'am')) %>%
+    mutate(DATETIME = parse_date_time(DATETIME, '%y.%m.%d %p %H:%M:%S'))
+
+head(data_time)
 
 
-cleanfun <- function(dataframes) {
-        data_list <- list()
-        param_name <- deparse(substitute(dataframes))
-        for(i in 1:(ncol(dataframes)/2)) {
-            i2 <- 2*i
-            data_list[[i]] <- dataframes[, c(i2-1, i2)]
-        }
-        #map_df(data_list, ~as.data.frame(.x), .id = "id")
-        data <- bind_rows(data_list, .id = "ID") 
-        colnames(data) <- c('ID', 'Time', 'DV')
-        data %>%
-            mutate(TYPE = param_name)
-        }
+########## Tidy data for TIME calculation ###########
 
-free_colistinA_clean <- cleanfun(free_colistinA)
-free_colistinB_clean <- cleanfun(free_colistinB)
-Total_colistinA_clean <- cleanfun(Total_colistinA)
-Total_colistinB_clean <- cleanfun(Total_colistinB)
-Total_CMS_clean <- cleanfun(Total_CMS)
+data_time_tidy <- data_time %>%
+    mutate(CMT = factor(CMT, levels = c(1, 2, 3, 4, 5), labels = c("CMS_A", "CMS_B", "Colistin_A", "Colistin_B", "CMS"))) %>%
+    select(ID, DATETIME, SS, NTAD, DV, MDV, CMT) %>%
+    group_by(ID) %>%
+    mutate(START = min(DATETIME)) %>%
+    ungroup() %>%
+    mutate(TIME = time_length(interval(START, DATETIME), "hour"))%>%
+    group_by(ID, SS) %>%
+    mutate(SSTART = min(DATETIME)) %>%
+    ungroup() %>%
+    mutate(TAD = time_length(interval(SSTART, DATETIME), "hour")) %>%
+    as.data.frame() 
 
-Total_data <- bind_rows(free_colistinA_clean, free_colistinB_clean, Total_colistinA_clean, Total_colistinB_clean, Total_CMS_clean) %>%
-                filter(Time != 0)
+data_time_tidy <- data_time_tidy %>%
+    mutate(DATETIME = if_else(TIME > 2500, update(DATETIME, year = 2020), DATETIME)) %>%
+    mutate(TIME = time_length(interval(START, DATETIME), "hour"))
 
-########## Sampling time ###########
+data_time_tidy_ss <- data_time_tidy %>%
+    mutate(SS = ifelse(TIME < 36 & ID != 19, 0, 1)) %>%
+    mutate(SSTART = if_else(ID == 19 & TIME > 12, ymd_hms('2022-01-27 19:00:00'), SSTART)) %>%
+    mutate(TAD = time_length(interval(SSTART, DATETIME), "hour"))   
 
-sampling <- read_csv('Data/samplingtime.csv', col_names = T, col_types = c('c', 'n', 'n', rep('T', 13))) %>% as.data.frame() %>%
-    mutate_at(vars(TIME6:TIME13), ymd_hm)
+data_time_tidy_ss %>%
+    filter(ID == 2)
+########## Plot #########
+
+plot_ss <- data_time_ss_clean %>%
+    filter(MDV == 0, CMT != 'CMS') %>%
+    filter(SS == 1) %>%
+    ggplot(aes(x = TAD, y = DV, col = as.factor(ID))) +
+    geom_point() +
+    geom_line() +
+    facet_wrap(vars(CMT), scales = "free_y")
+
+ggplotly(p = plot_ss)
+
+data_time_ss_clean <- data_time_tidy_ss %>%
+    filter(!(ID == 7 & TAD == 24 & SS ==0)) %>%
+    filter(!(ID == 17 & TAD == 12 & SS == 1)) %>%
+    filter(!(ID == 19 & TAD == 11)) %>%
+    filter(!(ID == 19 & TAD == 0 & SS == 1))
+
 
 # Dosing info로 추후 업데이트 예정 
+
+cleanfun <- function(dataframes) {
+    data_list <- list()
+    param_name <- deparse(substitute(dataframes))
+    for (i in 1:(ncol(dataframes) / 2)) {
+        i2 <- 2 * i
+        data_list[[i]] <- dataframes[, c(i2 - 1, i2)]
+    }
+    # map_df(data_list, ~as.data.frame(.x), .id = "id")
+    data <- bind_rows(data_list, .id = "ID")
+    colnames(data) <- c("ID", "Time", "DV")
+    data %>%
+        mutate(TYPE = param_name)
+}
+
 starttime <- sampling %>%
     gather('SEQ', 'TIME', -c('ID', 'DOSE', 'INT')) %>%
     arrange(ID, DOSE, TIME) %>%
