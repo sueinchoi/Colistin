@@ -50,7 +50,7 @@ data_time_tidy_ss %>%
 ########## Plot #########
 
 plot_ss <- data_time_ss_clean %>%
-    filter(MDV == 0) %>%
+    filter(MDV == 0, CMT != 'CMS') %>%
     filter(SS == 1) %>%
     ggplot(aes(x = TAD, y = DV, col = as.factor(ID))) +
     geom_point() +
