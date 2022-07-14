@@ -23,9 +23,14 @@ head(data_time)
 
 ########## Tidy data for TIME calculation ###########
 
+
+# 3 days ahead for starting dose in ID 19 #
+
+data_time <- data_time %>%
+    mutate(DATETIME = if_else(ID == 19 & MDV == 1, DATETIME - days(3), DATETIME), ADDL = ifelse(ID == 19 & MDV == 1, 18, NA)) 
 data_time_tidy <- data_time %>%
-    mutate(CMT = factor(CMT, levels = c(1, 2, 3, 4, 5), labels = c("CMS_A", "CMS_B", "Colistin_A", "Colistin_B", "CMS"))) %>%
-    select(ID, DATETIME, SS, NTAD, DV, MDV, CMT) %>%
+    mutate(CMT = ifelse(is.na(CMT), 0, CMT)) %>%
+    mutate(CMT = factor(CMT, levels = c(0, 1, 2, 3, 4, 5), labels = c("DEPOT", "CMS_A", "CMS_B", "Colistin_A", "Colistin_B", "CMS"))) %>%
     group_by(ID) %>%
     mutate(START = min(DATETIME)) %>%
     ungroup() %>%
@@ -45,25 +50,123 @@ data_time_tidy_ss <- data_time_tidy %>%
     mutate(SSTART = if_else(ID == 19 & TIME > 12, ymd_hms('2022-01-27 19:00:00'), SSTART)) %>%
     mutate(TAD = time_length(interval(SSTART, DATETIME), "hour"))   
 
-data_time_tidy_ss %>%
-    filter(ID == 2)
+data_time_tidy_ss %>% 
+    arrange(ID, TIME, CMT) %>%
+    filter(ID == 7)
+
+
+    
 ########## Plot #########
+
+data_time_ss_clean <- data_time_tidy_ss %>%
+    arrange(ID, TIME, CMT) %>%
+    filter(!(ID == 7 & TAD == 24 & SS ==0 & MDV == 0)) %>%
+    filter(!(ID == 17 & TAD == 12 & SS == 1 & MDV == 0)) %>%
+    filter(!(ID == 19 & TAD == 11 & MDV == 0)) %>%
+    filter(!(ID == 19 & TAD == 0 & SS == 1 & MDV == 0)) %>%
+    filter(!(ID == 20 & DV == 3140)) %>%
+    filter(!(ID == 15 & DV == 4440)) %>%
+    filter(!(ID == 16 & MDV == 0 & TAD %in% c(2, 4) & SS == 1)) %>%
+    filter(!(ID == 14 & MDV == 0 & TAD == 2.5 & SS == 1 & CMT == 'CMS_A')) %>%
+    filter(!(ID == 5 & MDV == 0 & TAD == 24 & SS == 1 & CMT == 'CMS_A')) %>%
+    filter(!(ID == 3 & MDV == 0 & TAD == 8 & SS == 1 & CMT == 'CMS_A')) %>%
+    filter(!(ID == 15 & MDV == 0 & TAD == 1.5 & SS == 0 & CMT == 'CMS_B')) %>%
+    filter(!(ID == 16 & MDV == 0 & TAD == 4 & SS == 0 & CMT == 'CMS_B')) %>%
+    filter(!(ID == 5 & MDV == 0 & TAD == 24 & SS == 1 & CMT == 'CMS_A')) %>%
+    filter(!(ID == 5 & MDV == 0 & TAD == 4 & SS == 1 & CMT == 'CMS_B')) %>%
+    filter(!(ID == 11 & MDV == 0 & TAD == 4 & SS == 1 & CMT == 'Colistin_A')) %>%
+    filter(!(ID %in% c(4, 5) & MDV == 0 & TAD == 1.5 & SS == 0 & CMT %in% c('Colistin_A', 'Colistin_B')))
 
 plot_ss <- data_time_ss_clean %>%
     filter(MDV == 0, CMT != 'CMS') %>%
-    filter(SS == 1) %>%
+    filter(SS == 0) %>%
     ggplot(aes(x = TAD, y = DV, col = as.factor(ID))) +
     geom_point() +
     geom_line() +
-    facet_wrap(vars(CMT), scales = "free_y")
+    facet_wrap(vars(CMT), scales = "free_y") +
+    scale_y_continuous(trans = "log10")
 
 ggplotly(p = plot_ss)
 
-data_time_ss_clean <- data_time_tidy_ss %>%
-    filter(!(ID == 7 & TAD == 24 & SS ==0)) %>%
-    filter(!(ID == 17 & TAD == 12 & SS == 1)) %>%
-    filter(!(ID == 19 & TAD == 11)) %>%
-    filter(!(ID == 19 & TAD == 0 & SS == 1))
+
+plot_indiv <- data_time_ss_clean %>%
+    filter(MDV == 0, CMT == 'Colistin_B') %>%
+    filter(SS == 0) %>%
+    ggplot(aes(x = TAD, y = DV, col = as.factor(ID))) +
+    geom_point() +
+    geom_line() +
+    facet_wrap(vars(ID), scales = "free") +
+    scale_y_continuous(trans = "log10")
+
+ggplotly(p = plot_indiv)
+head(data_time_ss_clean)
+
+arrange <- data_time_ss_clean %>%
+    select(ID, TIME, AMT, II, ADDL, DUR, DV, MDV, CMT, TAD, SS, NTAD, DATETIME) 
+
+# ID 1번은 dosing 시간이 불확실해서 12시간 앞으로 함 #
+data <- arrange %>%
+    mutate(DATETIME = if_else(ID == 1 & SS == 1, DATETIME - hours(12), DATETIME)) %>%
+    mutate(TIME = ifelse(SS==1 & ID == 1, TIME - 12, TIME))
+
+data %>%
+    filter(MDV == 1)
+
+dosedata <- data %>%
+    filter(MDV == 1) %>%
+    group_by(ID) %>%
+    mutate(Time_diff = TIME - lag(TIME), II = ifelse(is.na(II), 0, II), II_diff = II - lag(II),  addl_diff = abs(Time_diff / II_diff) - 1) %>% ungroup() %>%
+    as.data.frame() %>%
+    select(ID, TIME, AMT, II, ADDL, DUR, MDV, CMT, SS, ends_with('diff'))
+
+fulldose <- c(1, 2, 3, 4, 5, 6, 7, 11, 16, 18)
+diffdose <- setdiff(1:21, fulldose)
+
+doseupdated <- dosedata %>%
+    filter(ID %in% fulldose) %>%
+    filter(addl_diff >= 1) %>%
+    mutate(ADDL_diff = round(addl_diff)) %>%
+    select(ID, TIME, ADDL_diff, MDV) %>%
+    right_join(data, by = c('ID', 'TIME', 'MDV')) %>%
+    mutate(ADDL = ifelse(is.na(ADDL_diff), ADDL, ADDL_diff)) %>%
+    arrange(ID, TIME, CMT) %>%
+    select(-ADDL_diff)
+
+doseupdated_all <- doseupdated %>%
+    filter(ID %in% diffdose, MDV == 1) %>%
+    mutate(ADDL_diff = case_when(II == 8 ~ 21,
+                            II == 12 ~ 14,
+                            TRUE ~ NA_real_)) %>%
+    select(ID, TIME, ADDL_diff, MDV) %>%
+    right_join(doseupdated, by = c('ID', 'TIME', 'MDV')) %>%
+    mutate(ADDL = ifelse(is.na(ADDL_diff), ADDL, ADDL_diff)) %>%
+    arrange(ID, TIME, CMT) %>%
+    mutate(CMT_num = as.numeric(CMT)) 
+write.csv(doseupdated_all, 'Data_tidy/nonmem_all.csv', na = ".", row.names = F)
+
+doseupdated_all %>%
+    filter(CMT_num == 6 | CMT == 1) %>%
+    write.csv('Data_tidy/Nonmem_CMS.csv', na = ".", row.names = F)
+
+
+data_3 <- arrange %>%
+    filter(MDV == 1) %>%
+    pull(ID) %>%
+    table() %>%
+    as.data.frame() %>%
+    filter(Freq == 3) %>%
+    pull(".") 
+?na.locf
+arrange %>%
+    filter(ID %in% data_3 & MDV ==1) %>%
+    group_by(ID) %>%
+    mutate(DIFF = TIME - lag(TIME), II = ifelse(is.na(II), na.locf(II), II)) %>%
+    slice(2, 3) %>%
+    ungroup() %>%
+    select(ID, TIME, DIFF, II) %>%
+    mutate(ADDL_pre = DIFF/II - 1)
+
+write.csv('Data_tidy/nonmem_data.csv', na = ".", row.names = F)
 
 
 # Dosing info로 추후 업데이트 예정 
