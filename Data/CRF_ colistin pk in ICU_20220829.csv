@@ -1,0 +1,1579 @@
+,,,,,host factor,,,,,,,,,,,,,감염,,,,,효과평가변수,,,,,,,,,,,,,,,,,,,
+번호,등록번호,이름,Day,,성별,나이,키,몸무게,BSA,SOFA,APACHE,기저질환,CKD 여부,HD 여부,CRRT 여부,ECMO 여부,"Charson 
+comorbidity
+index",감염부위,원인균,"bacteremia
+1: positive
+0: negative",colistin MIC,"항생제 
+감수성",사망여부,감염관련성 여부,치료성공여부- clinical ,치료성공여부- microbiological,"중환자실
+재원일수",병원재원일수,BT (q4-6h),input,output,Hct,Cr,albumin,CRP,Procalcitonin,콜리스틴 투약,항생제,그외 약물,,,
+ID,ID2,Name,Day,,Sex,Age,Height,Weight,BSA,SOFA,APACHE,Comorbidity,CKD,HD,CRRT,ECMO,"Charson 
+comorbidity
+index",Infection_site,Infection_bacteria,Infection_bateremia,Infection_MIC,Infection_sensitivity,Death,Death_infection,Success_clinical,Success_microbiological,ICU_days,Hospital_days,BT,Input,Output,Hct,Cr,albumin,CRP,Procalcitonin,Colistin_admin,Other_antibiotics,Other_drugs,,,
+1,1504258,김경민 ,0,12월 01일,0,54,153,60,1.606,2,4,interstitial lung disease ,0,0,0,0,2,폐렴,CRAB,0,<=0.5,"Organism #1 : Acinetobacter baumannii
+  Colony count : (>100 colonies)
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           I    8
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R >= 320
+",,,,,재원,재원,37.3 / 38.2 / 36.4 / 36.5,1770,2230,30.7,0.24,3.5,1.89,,시작,metronidazole,"fentanyl, dexmedetomidine, acetylcysteine, pantoprazole, Methylprednisolone, mosapride, zipeprol, quetiapine",,,
+,,,1,12월 02일,,,,,,1,4,,,,,,,,,,,,,,,,,,36.9 / 37.4 / 37.4 / 36.7,2692,2250,31.7,0.31,3.4,1.37,,100mg iv q8h,metronidazole,"fentanyl, dexmedetomidine, acetylcysteine, pantoprazole, Methylprednisolone, mosapride, zipeprol, quetiapine, furosemide, metronidazole",,,
+,,,2,12월 03일,,,,,,1,4,,,,,,,,,,,,,,,,,,37.1/36.6/37.1/37.2,2453,1585,31.8,0.33,3.5,1.88,,100mg iv q8h,metronidazole,"fentanyl, dexmedetomidine, acetylcysteine, pantoprazole, Methylprednisolone, mosapride, zipeprol, quetiapine, metronidazole",,,
+,,,3,12월 04일,,,,,,1,4,,,,,,,,,,,,,,,,,,37.0/36.8/37.1/36.3,1368,1265,33.8,0.26,3.4,1.33,,100mg iv q8h,metronidazole,"dexmedetomidine, pantoprazole, mucosten, MethyPd, colistin, metronidazole, mosapride, zipeprol, quetiapine, lacidofil",,,
+,,,4,12월 05일,,,,,,1,4,,,,,,,,,,,,,,,,,,36.4/36.4/36.8/36.4,1488,1180,32.9,0.28,3.1,0.8,,100mg iv q8h,metronidazole,"dexmedetomidine, pantoprazole, mucosten, MethyPd, colistin, metronidazole, mosapride, zipeprol, quetiapine, lacidofil",,,
+,,,5,12월 06일,,,,,,1,4,,,,,,,,,,,,,,,,,,36.5/36.5/36.5/36.7,1868,1326,32,0.32,3,0.47,,100mg iv q8h,metronidazole,"dexmedetomidine, pantoprazole, mucosten, MethyPd, colistin, metronidazole, mosapride, zipeprol, quetiapine, lacidofil",,,
+,,,6,12월 07일,,,,,,1,4,,,,,,,,,,,,,,,,,,36.5/36.8/36.2/36.4,1810,2530,32.2,0.31,2.9,0.26,,100mg iv q8h,metronidazole,"dexmedetomidine, pantoprazole, mucosten, MethyPd, colistin, metronidazole, mosapride, zipeprol, quetiapine, lacidofil",,,
+,,,7,12월 08일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.2/36.3/36.7/36.3,1405,2080,33.1,0.32,3.2,0.24,,종료,metro 종료,"dexmedetomidine, pantoprazole, mucosten, methylPd, metronidazole,quetiapine, lacidofil",,,
+,,,8,12월 09일,,,,,,0,4,,,,,,,,,,,,,,,,퇴실,,"36.2/36.5/36.8/36.2
+",1100,1540,33.8,0.35,3.3,0.25,,,,"MethylPd, quetiapine, lacidofil",,,
+,,,9,12월 10일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.2/37.0/36.3,1600,1350,34.8,0.41,3.4,,,,,"MethylPd, quetiapine, lacidofil",,,
+,,,10,12월 11일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.6/36.2/36.7,1630,1630,,,,,,,,,,,
+,,,11,12월 12일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.2/36.8/36.0,1398,900,,,,,,,,,,,
+,,,12,12월 13일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.1/36.3/36.3,2244,0,,,,,,,,,,,
+,,,13,12월 14일,,,,,,0,4,,,,,,,,,,,,,,,,,,36.4/36.4/36.0,1870,60,39,0.44,4,0.05,,,,,,,
+,,,14,12월 15일,,,,,,0,4,,,,,,,,,,,,,,성공,성공,,,36.2/36.0/36.0,2158,180,,,,,,,,,,,
+,,,16,12월 17일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.03,,,,,,,
+,,,20,12월 21일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.04,,,,,,,
+,,,24,12월 25일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,12월 29일,,,,,,0,4,,,,,,,,,,,,생존,,성공,,,퇴실(12/24),,,,,,,,,,,,,,
+2,1442393,오정평,0,12월 14일,1,64,169,48,1.416,6,21,"glioblastoma, hypertension, diabetes",0,0,0,0,11,폐렴,CRAB,0,<=0.5,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           I    8
+ Tigecycline           S    1
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R >= 320",,,,,,,36.1/37.7/37.5/37.3,1490,1850,23.2,0.17,2.7,3.93,,시작,,"pantoprazole, mucosten, choline alfoscerate, levetiracetam, lacidofil, metformin",,,
+,,,1,12월 15일,,,,,,9,,,,,,,,,,,,,,,,,퇴실,,37.5/37.6/37.8/38.0,1650,5840,23.6,0.2,2.6,21.88,,70mg iv q8h,,"norepinephrine, lactulose, smecta, choline alfoscerate, levetiracetam, ",,,
+,,,2,12월 16일,,,,,,7,,,,,,,,,,,,,,,,,,,36.9/37.0/36.0/36.3,3620,4010,27.2,0.32,2.7,32.51,1.41,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole",,,
+,,,3,12월 17일,,,,,,7,,,,,,,,,,,,,,,,,,,36.6/36.1/36.0/35.8,2810,4840,29.1,0.35,2.5,38.9,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole",,,
+,,,4,12월 18일,,,,,,6,,,,,,,,,,,,,,,,,,,35.7/35.8/36.2/36.2,5555,2350,24.9,0.37,2.5,,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin",,,
+,,,5,12월 19일,,,,,,8,,,,,,,,,,,,,,,,,,,34.0/35.7/36.3/36.4,4727,3650,23,0.34,2,20.08,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,6,12월 20일,,,,,,8,,,,,,,,,,,,,,,,,,,36.2/36.9/36.8/36.6,3852,4200,30.3,0.39,2,,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,7,12월 21일,,,,,,10,,,,,,,,,,,,,,,,,,,36.4/36.9/37.1/36.8,3850,4500,31.6,,,22.09,1.64,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,8,12월 22일,,,,,,10,,,,,,,,,,,,,,,,,,,36.7,3600,1800,29.2,0.42,2,,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,9,12월 23일,,,,,,11,,,,,,,,,,,,,,,,,,,,3703,1350,27.7,0.42,1.7,,,70mg iv q8h,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,10,12월 24일,,,,,,12,23,,,,,,,,,,,,사망,yes,실패,실패,,퇴실 (12/24),,2833,750,23.8,0.45,1.9,,,종료,meropenem,"norepinephrine, lactulose, choline alfoscerate, levetiracetam, mucosten, esomeprazole, metformin, desmopressin",,,
+,,,11,12월 25일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,12월 26일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,12월 27일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,12월 28일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,1월 11일,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3,826472,권숙자,0,1-14,0,88,,38,1.24,7,24,diabetes,0,0,0,0,5,폐렴,"CRAB, CRPA",0,<=0.5,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Lightly)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           R >= 16
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R >= 320
+
+*Colistin MIC 결과는 CLSI 가이드라인에서 권고하는 검사방법에 준하지 않는 방법으로 위감수성결과를 보일수 있습니다.
+-------------------------------
+Organism #2 : Pseudomonas aeruginosa
+  Colony count : (Lightly)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Aztreonam             R >= 64
+ Imipenem              R >= 16
+ Meropenem             R    8
+ Amikacin              S    4
+ Gentamicin            S    4
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           R >= 16
+ Tigecycline           R >= 8
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R    160
+
+*Colistin MIC 결과는 CLSI 가이드라인에서 권고하는 검사방법에 준하지 않는 방법으로 위감수성결과를 보일수 있습니다.",생존,,성공,성공,,,37.3/37.6/38.1/36.6,2866,2160,24.7,0.37,3,7.93,,시작,"metronidazole, oral vancomycin (흡수율0%)","mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine",,,
+,,,1,1-15,,,,,,7,,,,,,,,,,,,,,,,,,,37.0/37.6/37.8/37.1,2347,2570,22.7,0.44,,7.06,,60mg iv q8h,oral vancomycin,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin",,,
+,,,2,1-16,,,,,,6,,,,,,,,,,,,,,,,,,,37.7/37.3/37.8/37.3,2605,3130,21.8,0.35,,8.61,,60mg iv q8h,oral vancomycin,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin",,,
+,,,3,1-17,,,,,,3,,,,,,,,,,,,,,,,,,,37.2/36.6/37.8/36.6,2540,2085,31.4,0.39,,9.03,,60mg iv q8h,oral vancomycin,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, fentanyl",,,
+,,,4,1-18,,,,,,3,,,,,,,,,,,,,,,,,,,38.0/37.5/37.2/37.8,3070,4115,29.2,0.42,,6.77,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin",,,
+,,,5,1-19,,,,,,3,,,,,,,,,,,,,,,,,,,38.0/38.0/36.7/36.7,2600,2890,30.9,0.4,,6.85,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin",,,
+,,,6,1-20,,,,,,3,18,,,,,,,,,,,,,,,,,,36.5/37.9/37.3/36.4,2420,2950,28.7,0.31,,,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,7,1-21,,,,,,3,,,,,,,,,,,,,,,,,,,38.2/36.8/37.1/37.5,2550,2610,29.6,0.43,,6.37,0.129,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,8,1-22,,,,,,3,,,,,,,,,,,,,,,,,,,38.0/37.8/36.6/36.6,2650,2525,27.5,0.39,,5.66,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,9,1-23,,,,,,3,,,,,,,,,,,,,,,,,,,38.2/37.5/37.5/36.8,1850,2200,31.9,0.48,,5.74,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,10,1-24,,,,,,3,14,,,,,,,,,,,,,,,성공,,,37.7/38.0/36.4/37.8,1860,2030,28.8,0.43,,6.59,0.109,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,11,1-25,,,,,,3,,,,,,,,,,,,,,,,,,,37.5/36.8/36.5/37.6,1680,2040,29.8,0.52,,9.98,0.11,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, thiamine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,12,1-26,,,,,,3,,,,,,,,,,,,,,,,,,,37.5/37.2/36.6/36.6,1500,1805,29.3,0.58,,12.74,,60mg iv q8h,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,13,1-27,,,,,,3,14,,,,,,,,,,,,,,,,,,36.8/37.2/37.1/37.5,1420,1440,30.7,0.65,,10.76,,종료,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,14,1-28,,,,,,3,,,,,,,,,,,,,,,,,2/2퇴실,,36.9/36.5/36.6/37.4,1420,1070,28.4,0.93,2.8,8.55,,,,"mucosten, nexium, atorvastatin, bisoprolol, feroba, amlodipine, k-contin, lacidofil, acetaminophen, risperidone",,,
+,,,16,1-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.76,,,,,,,
+,,,21,2-4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.8,,,,,,,
+,,,25,2-8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.12,,,,,,,
+,,,28,2-11,,,,,,3,,,,,,,,,,,,,생존,,,,,2/23 퇴원,37.3/37.0/36.8/37.5,1430,1000,25.3,0.91,2.9,4.21,,,,,,,
+4,1514062,박문화,0,1-15,1,80,163,60,1.62,3,22,"hypertension, diabetes, h/o MI",0,0,0,0,6,폐렴,CRAB,0,<=0.5,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R    160",,,,,,,36.8/38.9/37.2/37.6,2245,2090,26.2,1.74,2.4,,,시작,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , almagate, acetaminophen",,,
+,,,1,1-16,,,,,,3,21,,,,,,,,,,,,,,,,,,39.2/37.8/39.2/37.6,1810,2710,23.4,1.46,2.6,,,130mg iv q12h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , almagate, acetaminophen, pantoprazole, mucosten",,,
+,,,2,1-17,,,,,,3,24,,,,,,,,,,,,,,,,,,38.6/39.0/38.1/37.8,1855,1980,23.9,1.53,2.4,20.11,,130mg iv q12h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , almagate, acetaminophen, pantoprazole, mucosten, bioflor",,,
+,,,3,1-18,,,,,,3,18,,,,,,,,,,,,,,,성공 ,,,38.0/38.9/37.4/37.8,1315,1975,20.5,1.85,2.3,21.08,,130mg iv q12h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, precedex",,,
+,,,4,1-19,,,,,,3,19,,,,,,,,,,,,,,,,,,37.9/38.0/37.8/37.4,1110,3030,27.4,1.78,2.5,23.71,,130mg iv q12h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, precedex, digoxin",,,
+,,,5,1-20,,,,,,3,15,,,,,,,,,,,,,,,,,,38.0/38.0/37.2/37.8,1475,2260,26,1.04,2.6,27.82,,100mg iv q8h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, precedex, digoxin",,,
+,,,6,1-21,,,,,,3,17,,,,,,,,,,,,,,,,,,38.0/38.2/37.4/37.7,1195,1900,28.5,1.97,2.3,27.19,,100mg iv q8h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, precedex, digoxin",,,
+,,,7,1-22,,,,,,3,15,,,,,,,,,,,,,,,,,,36.4/38/38.2/37.5,770,1570,26.8,2.01,2.4,25.48,,100mg iv q8h,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, precedex, digoxin, acetaminophen",,,
+,,,8,1-23,,,,,,3,19,,,,,,,,,,,,,,,,,,37.1/37.6/38.5/37.3,620,1486,24.1,2.17,2,22.89,,80mg iv q12h,meropenem,"clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten",,,
+,,,9,1-24,,,,,,3,19,,,,,,,,,,,,,,,,,,37.5/38.0/36.9/37.6,625,1655,23.8,2.28,2.2,17.77,,종료,meropenem,"futhan, clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, digoxin, acetaminophen",,,
+,,,10,1-25,,,,,,3,19,,,,,,,,,,,,,,,,,,37.0/36.9/36.3/37.6,2050,3430,23.6,2.22,2.3,15.46,,,meropenem,"clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten",,,
+,,,11,1-26,,,,,,3,21,,,,,,,,,,,,,,,,,,37.8/38.4/37.0/37.5,2555,2040,26.3,1.92,,17.75,,,meropenem,"clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten",,,
+,,,12,1-27,,,,,,3,18,,,,,,,,,,,,,,,,,,37.4/36.9/37.3/37.7,1910,1550,24.8,1.81,,16.4,,,meropenem,"clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, digoxin",,,
+,,,13,1-28,,,,,,3,18,,,,,,,,,,,,,,,,,,37.1/38.0/37.9/37.7,2230,1740,24.1,1.68,2.5,,,,meropenem,"clexane, metoclopromide, nicorandil, bisoprolol, atorvastatin, , pantoprazole, mucosten, amlodipine",,,
+,,,14,1-29,,,,,,3,18,,,,,,,,,,,,,,,,2/9퇴실,,37.3/37.4/38.0/37.2,2280,1610,22.3,1.61,,9.09,,,meropenem,,,,
+,,,16,1-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.17,,,,,,,
+,,,20,2-4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3.07,,,,,,,
+,,,24,2-8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.85,,,,,,,
+,,,28,2-12,,,,,,3,14,,,,,,,,,,,,생존,,,,,2/26 퇴원,37.7/37.4/37.4/37.4,2050,3430,28.5,1.09,2.9,2.57,,,meropenem,,,,
+5,548557,김필관,0,1-21,1,85,163,53,1.55,13,15,"Lung cancer, BPH, h/o MI",0,0,0,0,11,폐렴,CRAB,0,<=0.5,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R    160
+",,,실패,실패,,,37.5/37.0/36.7/36.8,4123,2750,20.1,1.16,2.3,18.14,,시작,"anidulafungin, pip/tazo","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin",,,
+,,,1,1-22,,,,,,15,17,,,,,,,,,,,,,,,,,,36.6/36.6/36.2/36.6,3058,2290,25.7,1.95,2.2,20.47,,80mg iv q8h,"anidulafungin, meropenem","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix",,,
+,,,2,1-23,,,,,,15,18,,,,,,,,,,,,,,,,,,37.5/36/36.4/36.7,3389,1655,25.1,2.12,2.2,24.21,,90mg iv q12h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix",,,
+,,,3,1-24,,,,,,15,19,,,,,,,,,,,,,,,,,,36.5/36.7/37.5/36.5,2791,830,23.8,2.73,2.3,23.97,,90mg iv q12h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef",,,
+,,,4,1-25,,,,,,15,19,,,,,,,,,,,,,,,,,,36.3/36.5/37.5/36.5,2437,955,24.1,2.97,2.5,10.57,,90mg iv q12h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef",,,
+,,,5,1-26,,,,,,16,20,,,,,,,,,,,,,,,,,,36.3/36.4/36.2/36.9,2211,1265,24.1,3.37,,,,90mg iv q12h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef",,,
+,,,6,1-27,,,,,,16,20,,,,,,,,,,,,,,,,,,36.0/36.1/36.2/36.4,1991,960,22.7,3.75,2.7,4.94,,90mg iv q24h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef",,,
+,,,7,1-28,,,,,,16,20,,,,,,,,,,,,,,,,,,36.5/36.4/37.0/37.6,3132,965,,,,,,90mg iv q24h,"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef",,,
+,,,8,1-29,,,,,,16,20,,,,,,,,,,,,,,,,,,37.3/36.2/36.5/36.8,2311,482,24,4.5,2.4,1.59,,종료 (90mg iv q24h),"anidulafungin, meropenem, teicoplanin","norepinephrine, mucosten, pantoprazole, propofol, aspirin, UDCA, silymarin, lasix, solucortef, sodium bicarbonate",,,
+,,,9,1-30,,,,,,16,21,,,,,,,,,,,,,,,,,,37.0/36.4/36.2/36.1,2752,90,23.8,4.88,2.2,1.14,,,,,,,
+,,,10,1-31,,,,,,17,23,,,,,,,,,,,,사망,Y,,,1/31퇴실(사망),1/31퇴원,36.4/36.8/36.7/36.8,925,5,22.1,5.58,2.4,0.9,,,,,,,
+,,,11,2-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,2-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,2-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,2-4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,2-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6,730310,정운천,0,2-5,1,63,,,,3,14,"BPH, 녹내장, dyslipidemia",0,0,0,0,2,폐렴,CRAB,0,<=0.5,"Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S    2
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R    160
+",,,,,,,36.3/36.5/36.4/37.2,2136,1750,30.3,0.51,2.7,37.13,,1,"colistin: 2/5-2/19
+meropenem: 2/5-2/19
+micafungin: 2/5-2/19
+teicoplanin 2/8-2/15",,,,
+,,,1,2-6,,166,,,,11,26,,,,,,,,,,,,,,,,,,37.0/36.7/37.2/36.6,1720,2320,24.5,0.45,2.7,25.96,,,,,,,
+,,,2,2-7,,60,,,,7,25,,,,,,,,,,,,,,,,,,36.5/37.1/38.4/36.8,2250,3440,25.4,0.4,2.6,17.38,,,,,,,
+,,,3,2-8,,,,,,8,22,,,,,,,,,,,,,,,,,,36.9/38.3/37.0/36.9,2120,2200,24.8,0.49,2.9,21.52,,,,,,,
+,,,4,2-9,,,,,,6,26,,,,,,,,,,,,,,,,,,37/36.6/36.4/37.2,2083,2600,23.6,0.42,2.1,17.72,,,,,,,
+,,,5,2-10,,,,,,6,26,,,,,,,,,,,,,,,,,,38.9/36.5/36.8/36.2,1890,2570,23,0.45,2.6,14.82,,,,,,,
+,,,6,2-11,,,,,,7,23,,,,,,,,,,,,,,,,,,36.7/36.4/36.5/37.2,2595,2895,23,0.4,2.5,15.37,,,,,,,
+,,,7,2-12,,,,,,6,25,,,,,,,,,,,,,,,,,,37.3/37.1/36.9/37.2,2614,4180,23,0.47,2.5,8.93,,,,,,,
+,,,8,2-13,,,,,,8,26,,,,,,,,,,,,,,,,,,36.9/36.9/36.9/38.3,2680,3620,22.1,0.45,2.6,7.3,,,,,,,
+,,,9,2-14,,,,,,5,20,,,,,,,,,,,,,,,,,,37.2/36.8/37/36.3,2433,3110,21.9,0.35,2.9,5.4,,,,,,,
+,,,10,2-15,,,,,,4,18,,,,,,,,,,,,,,,,,,36.8/37/36.4/36.8,2308,2590,22.6,0.42,2.9,5.14,,,,,,,
+,,,11,2-16,,,,,,3,19,,,,,,,,,,,,,,,,,,36.3/36.7/36.5/36.5,1750,2480,21.4,0.47,2.7,3.26,,,,,,,
+,,,12,2-17,,,,,,3,17,,,,,,,,,,,,,,,,,,36.6/36.6/37/37.1,1760,1425,21.9,0.45,2.8,2.61,,,,,,,
+,,,13,2-18,,,,,,3,16,,,,,,,,,,,,,,,,2/17 퇴실,,37.9/37.9/37.6/38.1,1990,1400,23.2,0.63,2.7,2.45,,,,,,,
+,,,14,2-19,,,,,,3,14,,,,,,,,,,,,,,,,,,37.9/38.1/38.4/37.4,2640,1900,26.4,0.71,2.6,2.11,,,,,,,
+,,,17,2-22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.11,,,,,,,
+,,,20,2-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.29,,,,,,,
+,,,24,3-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.22,,,,,,,
+,,,28,3-5,,,,,,3,14,,,,,,,,,,,,생존,,,,,6/8퇴원,36.7/37.0/37.0/37.4,2200,1700,26.1,0.45,2.5,2.93,,,,,,,
+7,291372,오화용,0,4-26,0,87,,,,7,21,"고혈압, 당뇨, 심부전, 치매",0,0,0,0,7,폐렴,CRAB,0,<=0.5,"
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            S    4
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           R >= 8
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    S <= 20
+",,,,,,,36.6/36.3/36.3/36.5,1340,1580,32.5,3.01,2.8,2.5,,1,"colistin: 4/26-5/2
+pip/tazo 4/26-4/27",,,,
+,,,1,4-27,,155,,,,7,24,,,,,,,,,,,,,,,,,,36.5/36.2/36.3/36.3,1410,1620,26.1,2.96,2.4,1.47,,,,,,,
+,,,2,4-28,,40,,,,7,23,,,,,,,,,,,,,,,,,,36.4/37.2/36.7/36.5,1440,1720,25.7,2.78,2.5,1.33,,,,,,,
+,,,3,4-29,,,,,,7,23,,,,,,,,,,,,,,,,,,36.6/36.7/37.1/38.3,1120,1110,25.9,2.87,2.4,1.89,,,,,,,
+,,,4,4-30,,,,,,7,,,,,,,,,,,,,,,,,4/29퇴실,,37.4/37.9/37.3/37.5,2580,1455,22.6,3.51,2.4,5.2,,,,,,,
+,,,5,5-1,,,,,,7,,,,,,,,,,,,,,,,,,,,29000,2350,,,,,,,,,,,
+,,,6,5-2,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,7,5-3,,,,,,7,,,,,,,,,,,,,,,,,,,,,,25.4,3.8,2.5,5.85,,,,,,,
+,,,8,5-4,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,9,5-5,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,3.85,,,,,,,,,
+,,,10,5-6,,,,,,7,,,,,,,,,,,,,,,,,,,,,,24.1,3.75,2.8,4.77,,,,,,,
+,,,11,5-7,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,5-8,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,5-9,,,,,,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,5-10,,,,,,7,,,,,,,,,,,,,,,,,,,,,,23.2,3.42,2.7,4.87,,,,,,,
+,,,17,5-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.74,,,,,,,
+,,,21,5-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.21,,,,,,,
+,,,25,5-21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.88,,,,,,,
+,,,28,5-24,,,,,,7,,,,,,,,,,,,,생존,,,,,6/23퇴원,,,,23.2,2.73,2.9,8.43,,,,,,,
+8,1535569,조문기,0,5-17,1,56,,,,6,20,"HTN, DM, DL, pneumonia",0,0,0,0,2,폐렴,"CRAB, CRPA",0,2,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            S    2
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           S    2
+ Colistin              S    2
+ Trimethoprim/Sulfa    S <= 20
+",,,,,,,36.8/36.9/36.2/36.6,3686,4400,29.6,0.59,3,4.32,,,"colistin: 5/18-6/7
+cefepime: 5/29-6/3
+voriconazole: 5/17-6/9",,,,
+,,,1,5-18,,175,,,,5,17,,,,,,,,,,,"Organism #2 : Pseudomonas aeruginosa
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          S    16
+ Piperacillin/Tazobac  S    8
+ Cefotaxime            R    32
+ Ceftazidime           S    4
+ Cefepime              S    2
+ Aztreonam             I    16
+ Imipenem              S    1
+ Meropenem             S    0.5
+ Amikacin              S <= 2
+ Gentamicin            S    4
+ Ciprofloxacin         S <= 0.25
+ Levofloxacin          S    1
+ Minocycline           R >= 16
+ Tigecycline           R >= 8
+ Colistin              S    2
+ Trimethoprim/Sulfa    R >= 320",,,,,,,36.7/36.9/36.5/37.2,3931,3030,31,0.49,2.9,3.95,,,,,,,
+,,,2,5-19,,62,,,,5,16,,,,,,,,,,,,,,,,,,36.7/36.6/36.2/36.5,4051,4360,30.1,0.54,2.9,0.02,,,,,,,
+,,,3,5-20,,,,,,6,16,,,,,,,,,,,,,,,,,,36.5/36.6/36.4/36.3,3516,3430,29.9,0.45,3.2,2.89,,,,,,,
+,,,4,5-21,,,,,,5,14,,,,,,,,,,,,,,,,,,36.5/36.8/37.2/37.3,3146,2850,30,0.61,3.3,2.18,,,,,,,
+,,,5,5-22,,,,,,5,15,,,,,,,,,,,,,,,,,,37.7/37.5/36.7/37.5,3182,2680,30.5,0.63,3.5,5.89,,,,,,,
+,,,6,5-23,,,,,,6,14,,,,,,,,,,,,,,,,,,36.2/36.9/36.9/37.4,2987,2610,29.7,0.66,3.4,9.52,,,,,,,
+,,,7,5-24,,,,,,5,17,,,,,,,,,,,,,,,,,,37.6/37.2/36.9/37,2967,1665,29.6,0.6,3.6,9.85,,,,,,,
+,,,8,5-25,,,,,,5,20,,,,,,,,,,,,,,,,,,36.9/36.8/39/37.9,3404,2063,27.8,0.51,3.1,8.91,,,,,,,
+,,,9,5-26,,,,,,5,18,,,,,,,,,,,,,,,,,,37.2/37.2/37.3/36.6,3096,1880,27.4,0.53,3.2,24.4,,,,,,,
+,,,10,5-27,,,,,,5,19,,,,,,,,,,,,,,,,,,38/37.4/37.4/36.4,3292,1975,24.7,0.58,3.3,24.29,,,,,,,
+,,,11,5-28,,,,,,6,18,,,,,,,,,,,,,,,,,,37.2/36.9/36.8/36.6,3840,3345,28.7,0.5,3.6,18.3,,,,,,,
+,,,12,5-29,,,,,,5,17,,,,,,,,,,,,,,,,,,36.6/37/37/37.1,3764,4080,29,0.6,3.4,9.09,,,,,,,
+,,,13,5-30,,,,,,5,17,,,,,,,,,,,,,,,,,,36.4/36.6/36.8.36.9,3596,3910,28.6,0.63,3.4,6.65,,,,,,,
+,,,14,5-31,,,,,,6,18,,,,,,,,,,,,,,,,6/8퇴실,,36.9/36.8/36.8/36.4,2027,2480,29.5,0.59,3.5,4.82,,,,,,,
+,,,16,6-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.53,,,,,,,
+,,,20,6-6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.37,,,,,,,
+,,,24,6-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11.76,,,,,,,
+,,,28,6-14,,,,,,1,11,,,,,,,,,,,,생존,,,,,7/3퇴원,36.8/36.9/37.1/37.2,2710,1100,25.7,0.52,3.2,6.41,,,,,,,
+9,873323,김익영,0,6-30,1,84,,,,10,22,"HTN,Variant Angina, lumbar HNP, pneumonia, BPH, 녹내장",0,0,0,0,5,폐렴,CRKP,0,,"Organism #1 : Klebsiella pneumoniae
+
+  Colony count : (Heavily)
+
+ ESBL                  +    Pos
+ Ampicillin            R >= 32
+ Amoxicillin/CA        R >= 32
+ Piperacillin/Tazobac  R >= 128
+ Cefazolin             R >= 64
+ Cefoxitin             R >= 64
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R    32
+ Aztreonam             R >= 64
+ Ertapenem             R >= 8
+ Imipenem              R >= 16
+ Amikacin              S <= 2
+ Gentamicin            S <= 1
+ Ciprofloxacin         R >= 4
+ Tigecycline           R >= 8
+ Trimethoprim/Sulfa    R >= 320
+-------------------------------",,,,,,,36.5/36.3/36.4/36.4,2515,2335,24.5,1.47,2.5,7.86,,,"colistin: 6/30-7/14
+levofloxacin: 7/6-7/14
+fluconazole: 6/30-7/14
+amikacin: 6/30-7/5
+TMP/SMX: 6/30-7/5
+",,,,
+,,,1,7-1,,170,,,,10,23,,,,,,,,,,,,,,,,,,36.6/35.9/36.3/36.3,2708,3390,23.3,1.51,2.5,7.79,,,,,,,
+,,,2,7-2,,67,,,,9,20,,,,,,,,,,,,,,,,,,36.3/36.3/36.5/36.3,2703,3150,21.9,1.46,2.4,7.18,,,,,,,
+,,,3,7-3,,,,,,8,23,,,,,,,,,,,,,,,,,,36.1/36.6.3/36.3/36.2,3130,1830,23,1.51,2.4,6.59,,,,,,,
+,,,4,7-4,,,,,,9,24,,,,,,,,,,,,,,,,,,36.0/36.1/36.4/36.3,2570,1630,25.6,1.55,2.5,5.74,,,,,,,
+,,,5,7-5,,,,,,9,20,,,,,,,,,,,,,,,,,,36.4/36.8/36.8/36.3,3472,3770,24.2,1.89,2.6,6.03,,,,,,,
+,,,6,7-6,,,,,,9,23,,,,,,,,,,,,,,,,,,36.1/36.9/36.9/36.6,2850,4130,22.7,1.75,2.5,6.47,,,,,,,
+,,,7,7-7,,,,,,10,24,,,,,,,,,,,,,,,,,,36.5/36.4/36.3/36.3,2222,2620,21.7,1.75,2.5,3.72,,,,,,,
+,,,8,7-8,,,,,,10,20,,,,,,,,,,,,,,,,,,36.1/35.6/36.4/36.8,2980,3740,21.1,1.72,2.5,2.52,,,,,,,
+,,,9,7-9,,,,,,10,20,,,,,,,,,,,,,,,,,,36.5/36.2/36.6/36.5,2687,3150,27.1,1.74,2.5,3.01,,,,,,,
+,,,10,7-10,,,,,,9,23,,,,,,,,,,,,,,,,,,37.1/36.5/37/36.6,2090,2580,27.5,1.51,2.4,6.25,,,,,,,
+,,,11,7-11,,,,,,9,23,,,,,,,,,,,,,,,,,,37.1/36.6/36.4/37.1,1978,2090,29.9,1.57,2.3,12.61,,,,,,,
+,,,12,7-12,,,,,,8,24,,,,,,,,,,,,,,,,,,36.8/36.6/37.7/37.8,1715,2320,28.3,1.75,2.6,14.42,,,,,,,
+,,,13,7-13,,,,,,7,22,,,,,,,,,,,,,,,,,,36.4/36.1/36.4/36.5,1872,1500,30.4,1.62,2.4,15.37,,,,,,,
+,,,14,7-14,,,,,,5,21,,,,,,,,,,,,,,,,,,37.5/36.8/36.5/36.4,1847,2850,27.8,1.72,2.5,8.95,,,,,,,
+,,,16,7-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.91,,,,,,,
+,,,20,7-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.83,,,,,,,
+,,,24,7-24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.59,,,,,,,
+,,,28,7-28,,,,,,4,18,,,,,,,,,,,,생존,,,,8/6퇴실,9/13퇴원,36.3/36.4/36.5/36.6,2404,1565,26.6,0.78,2.5,7.11,,,,,,,
+10,1546596,이건의,0,8-19,1,67,,,,8,23,"CKD, HF, COPD, Bronchiectasis, DM, HTN, dyslipidemia, h/o Pulmonary Tb",1,0,0,0,5,폐렴,CRAB,0,1,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Heavily)
+
+ Ampicillin/Sulbactam  R    16
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            S    2
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           I    4
+ Colistin              S    1
+ Trimethoprim/Sulfa    S <= 20
+",,,,,,,36.4/36.5/36.0/36.1,1261,1480,24.3,1.05,2.5,17.4,,,"colistin: 8/19-8/23
+meropenem: 8/18-8/23
+teicoplanin: 8/18-8/23
+ganciclovir:8/18-8/23",,,,
+,,,1,8-20,,168,,,,9,27,,,,,,,,,,,,,,,,,,36.0/36.3/36.2/36.8,1602,1585,20.1,0.77,2.6,13.79,,,,,,,
+,,,2,8-21,,70,,,,9,28,,,,,,,,,,,,,,,,,,37.2/37.4/37.0/36.7,3468,2454,22,1.05,2.3,13.7,,,,,,,
+,,,3,8-22,,,,,,11,27,,,,,,,,,,,,,,,,,,36.7/36.6/36.6/36.8,3344,2468,24.2,1.43,2.4,25.27,,,,,,,
+,,,4,8-23,,,,,,11,30,,,,,,,,,,,,사망,,,,,,36.1/36.2/36.0,,,28.4,1.96,2.6,27.18,,,,,,,
+,,,5,8-24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,6,8-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,7,8-26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,8,8-27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,9,8-28,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,10,8-29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,11,8-30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,8-31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,9-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,9-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,9-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+11,1289943,정두길,0,8-20,1,72,,,,12,25,"hypertension, traumatic SDH",0,0,0,0,5,폐렴,"CRPA, S. maltophilia",0,<=0.5,"
+Organism #1 : Pseudomonas aeruginosa
+
+  Colony count : (Lightly)
+
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           I    4
+ Cefepime              R >= 64
+ Aztreonam             I    16
+ Imipenem              R >= 16
+ Meropenem             R    8
+ Amikacin              S    16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Tigecycline           R >= 8
+ Colistin              S <= 0.5
+",,,,,,,37.1/37.4/36.8/36.6,1674,1170,22.8,0.7,2.9,4.74,,,"colistin: 8/20-8/26
+fluconazole: 8/20-9/2
+",,,,
+,,,1,8-21,,165,,,,11,27,,,,,,,,,,,,,,,,8/21퇴실,,37.2/37.1/37.2/36.6,1094,2870,21.5,0.73,2.5,4.47,,,,,,,
+,,,2,8-22,,60,,,,9,25,,,,,,,,,,,,,,,,,,37.5/36.9/37.0/37.8,1879,2790,19,1.03,2.9,6.26,,,,,,,
+,,,3,8-23,,,,,,8,24,,,,,,,,,,,,,,,,,,36.2/36.4/36.7/37.6,1771,2440,27.4,1.38,2.8,10.14,,,,,,,
+,,,4,8-24,,,,,,6,22,,,,,,,,,,,,,,,,,,37.4/36.7/36.2/36.9,1370,2895,25.9,1.4,3,12.79,,,,,,,
+,,,5,8-25,,,,,,6,19,,,,,,,,,,,,,,,,,,36.8/37.1/37.4/37.0,2360,2880,26.2,1.46,3.1,11.6,,,,,,,
+,,,6,8-26,,,,,,5,19,,,,,,,,,,,,,,,,,,36.8/36.8/36.4/36.0,3040,3530,26.7,1.4,3.1,10.19,,,,,,,
+,,,7,8-27,,,,,,5,19,,,,,,,,,,,,,,,,,,36.9/36.6/36.9/37.0,3360,4040,27.3,1.32,3.1,8.44,,,,,,,
+,,,8,8-28,,,,,,4,21,,,,,,,,,,,,,,,,,,36.9/36.8/37.4/37.1,2190,3470,28.7,1.15,3.2,7.7,,,,,,,
+,,,9,8-29,,,,,,4,23,,,,,,,,,,,,,,,,,,36.7/36.5/37.2/36.5,2130,2345,29.3,1.17,3.3,8.6,,,,,,,
+,,,10,8-30,,,,,,4,21,,,,,,,,,,,,,,,,,,37.3/37.1/36.5/36.3,1230,1720,29.3,1.19,3.4,8.96,,,,,,,
+,,,11,8-31,,,,,,5,22,,,,,,,,,,,,,,,,,,36.3/36.5/6.6/36.4,2030,1770,27.8,1.26,3.4,6.68,,,,,,,
+,,,12,9-1,,,,,,4,21,,,,,,,,,,,,,,,,,9/1퇴원,36.3/37.0/36.3,,,26.3,1.22,3.3,6.77,,,,,,,
+,,,13,9-2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,9-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,9-17,,,,,,,,,,,,,,,,,,,생존,,,,,,,,,,,,,,,,,,,
+12,1463451,김명일,0,8-23,1,57,,,,10,24,기관지확장증,0,0,0,1,2,폐렴,CRAB,0,<=0.5,"Organism #1 : Acinetobacter baumannii
+
+  Colony count : (Lightly)
+
+ Ampicillin/Sulbactam  R >= 32
+ Piperacillin          R >= 128
+ Piperacillin/Tazobac  R >= 128
+ Cefotaxime            R >= 64
+ Ceftazidime           R >= 64
+ Cefepime              R >= 64
+ Imipenem              R >= 16
+ Meropenem             R >= 16
+ Gentamicin            R >= 16
+ Ciprofloxacin         R >= 4
+ Levofloxacin          R >= 8
+ Minocycline           S <= 1
+ Tigecycline           S    2
+ Colistin              S <= 0.5
+ Trimethoprim/Sulfa    R    160",,,,,,,39.4/37.1/37.3/36.9,4820,3510,25.2,0.79,2.9,23.08,34.02,,"colistin: 8/23-9/30
+minocycline: 9/7-9/26
+meropenem: 8/20-9/26
+ teicoplanin: 9/8-9/27",,,,
+,100cc mix,,1,8-24,,160,,,,10,22,,,,,,,,,,,,,,,,,,36.1/36.1/36.0/36.9,3669,3100,26.7,0.61,2.3,28.86,,,,,,,
+,,,2,8-25,,57,,,,10,21,,,,,,,,,,,,,,,,,,37.5/36.6/36.9/37.2,3969,3270,24.6,0.79,2.1,19.18,,,,,,,
+,,,3,8-26,,,,,,10,23,,,,,,,,,,,,,,,,,,37.6/37.2/37.1/37.5,4036,3950,23.8,0.82,2.1,17.13,19.32,,,,,,
+,,,4,8-27,,,,,,10,22,,,,,,,,,,,,,,,,,,37.7/37.4/36.7/36.5,3686,2860,25.5,0.97,2.4,19.49,,,,,,,
+,,,5,8-28,,,,,,9,22,,,,,,,,,,,,,,,,,,37.3/37.4/37.6/37.7,4255,3300,25.7,0.86,2.4,17.71,,,,,,,
+,,,6,8-29,,,,,,9,24,,,,,,,,,,,,,,,,,,37.5/36.7/36.1/36.6,4486,4365,21,1.14,2.4,22.6,,,,,,,
+,,,7,8-30,,,,,,10,23,,,,,,,,,,,,,,,,,,36.3/36.7/36.2/36.5,5407,5150,21.9,1.14,2.4,21.44,19.59,,,,,,
+,,,8,8-31,,,,,,10,23,,,,,,,,,,,,,,,,,,36.6/37.0/37.3/36.7,6100,5130,23.9,1.14,3,22.19,,,,,,,
+,,,9,9-1,,,,,,11,23,,,,,,,,,,,,,,,,,,36.0/36.8/37.2/36.4,5380,4390,26.1,1.32,3.2,18.61,,,,,,,
+,,,10,9-2,,,,,,11,21,,,,,,,,,,,,,,,,,,36.2/36.3/37.1/36.8,4500,4655,26.1,1.07,2.9,23.88,10.32,,,,,,
+,,,11,9-3,,,,,,11,23,,,,,,,,,,,,,,,,,,38.3/37.1/37.0/37.7,3983,4220,26.4,1.09,2.9,23.44,,,,,,,
+,,,12,9-4,,,,,,12,24,,,,,,,,,,,,,,,,,,36.9/37.1/37.3/37.3,4494,4370,26,0.98,2.9,22.74,,,,,,,
+,,,13,9-5,,,,,,12,25,,,,,,,,,,,,,,,,,,37.0/37.2/37.7/36.9,4620,3635,23.2,0.97,2.8,19.32,7.04,,,,,,
+,,,14,9-6,,,,,,12,23,,,,,,,,,,,,,,,,,,36.3/36.9/36.3/36.5,4043,3378,26,1,2.7,21.95,7.47,,,,,,
+,,,16,9-8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18.5,,,,,,,
+,,,20,9-12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.79,,,,,,,
+,,,24,9-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.7,,,,,,,
+,,,28,9-20,,,,,,11,21,,,,,,,,,,,,생존,,,,12/9퇴원,12/9퇴원,37.0/36.0/36.6/36.8,3046,2780,27.4,1.21,3.1,6.29,2.87,,,,,,
+13,1554154,허호철,0,10-8,1,43,,,,6,20,0,0,0,0,0,1,폐렴,CRPA,0,<=0.5,"Organism : Pseudomonas aeruginosa, Colony count : Moderately .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            64               I 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        16               I 
+   Cefepime                           16               I 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         <=1.0            S 
+   Ciprofloxacin                      1                S 
+   Levofloxacin                       4                I 
+   Tigecycline                        >=8.0            R 
+   Amikacin                           <=2.0            S 
+   Aztreonam                          >=64.0           R 
+===========================================================================",,,,,,,36.2/37.4/3638/37.4,3380,2560,36.8,0.41,3.1,6.08,,,"colistin: 10/8- 10/15
+",,,,
+,,,1,10-9,,172,,,,6,16,,,,,,,,,,,,,,,,,,38.7/38.2/37.7/38.1,3285,3160,34.7,0.4,2.8,2.6,,,,,,,
+,,,2,10-10,,94,,,,6,16,,,,,,,,,,,,,,,,,,36.7/36.8/38.1/37.3,3280,3470,34.3,0.28,2.9,1.35,,,,,,,
+,,,3,10-11,,,,,,6,14,,,,,,,,,,,,,,,,,,37.3/37.2/36.8/36.5,2980,3050,34.6,0.29,3.4,1.54,,,,,,,
+,,,4,10-12,,,,,,6,16,,,,,,,,,,,,,,,,,,37.5/37.4/37.2/36.8,2822,2960,33.6,0.31,3.1,3.19,0.19,,,,,,
+,,,5,10-13,,,,,,3,13,,,,,,,,,,,,,,,,,,37.4/36.5/37.2/37.3,2340,2590,33.2,0.27,3.3,4.65,,,,,,,
+,,,6,10-14,,,,,,6,17,,,,,,,,,,,,,,,,,,36.8/37.2/36.9/36.7,2332,1470,36.2,0.25,3.5,4.86,,,,,,,
+,,,7,10-15,,,,,,5,16,,,,,,,,,,,,,,,,,,37.5/37.5/37.5/37.2,2110,1360,37.7,0.33,3.4,4.29,,,,,,,
+,,,8,10-16,,,,,,4,15,,,,,,,,,,,,,,,,,,37.2/36.8/37.1/37.0,2140,2080,36.8,0.23,3.2,6.37,,,,,,,
+,,,9,10-17,,,,,,5,12,,,,,,,,,,,,,,,,,,37.0/36.7/37.0/37.7,3080,2200,38.1,0.31,3.5,5.57,,,,,,,
+,,,10,10-18,,,,,,3,13,,,,,,,,,,,,,,,,,,38.0/37.2/37.2/37.0,1540,1340,36.5,0.31,3.2,4.84,0.128,,,,,,
+,,,11,10-19,,,,,,5,12,,,,,,,,,,,,,,,,,,36.7/37.1/36.5/36.9,3110,2400,35.3,0.29,3.2,5.02,,,,,,,
+,,,12,10-20,,,,,,4,121,,,,,,,,,,,,,,,,10/20퇴실,,36.9/37.0/36.5/37.1,2819,1190,36.1,0.27,3.5,4.28,0.085,,,,,,
+,,,13,10-21,,,,,,3,11,,,,,,,,,,,,,,,,,,36.2/37.4/37.3/37.0,1950,610,38.6,0.3,3.5,3.76,0.101,,,,,,
+,,,14,10-22,,,,,,3,11,,,,,,,,,,,,,,,,,,37.0/37.7/37.5/37.2,1650,230,38,0.36,3.5,2.3,0.083,,,,,,
+,,,17,10-25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.3,,,,,,,
+,,,20,10-28,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.86,,,,,,,
+,,,24,11-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.94,,,,,,,
+,,,28,11-5,,,,,,2,13,,,,,,,,,,,,생존,,,,,11/23퇴원,36.8/36.3/37.0/36.8,2200,950,38.2,0.36,3.1,0.55,,,,,,,
+14,987659,이호정,0,11-17,1,74,,,,9,27,"hypertension, BPH, hyperthyroidism, Bronchiti",0,0,0,0,4,폐렴,CRAB,0,<=0.5,"Organism : Acinetobacter baumannii, Colony count : Heavily .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         4.0              S 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        2.0              S 
+   Trimethoprim/Sulfamethoxazole      <=20.0           S 
+===========================================================================",,,,,,,36.3/36.8/36.6/37.1,2071,1230,27.6,2.35,2.8,17.85,,,"colistin: 11/17-12/1
+minocycline: 11/7-12/1
+meropenem: 11/7-12/1",,,,
+,,,1,11-18,,154,,,,9,27,,,,,,,,,,,,,,,,,,36.6/36.8/36.8/36.3,2112,1120,26.6,2.42,2.3,41.23,,,,,,,
+,,,2,11-19,,57,,,,8,28,,,,,,,,,,,,,,,,,,36.1/35.8/36.8/36.0,2673,1970,23.8,2.33,2.4,23.27,3.59,,,,,,
+,,,3,11-20,,,,,,9,28,,,,,,,,,,,,,,,,,,36.1/35.7/37.5/36.5,2271,1670,24.7,2.4,2.1,8.7,,,,,,,
+,,,4,11-21,,,,,,8,27,,,,,,,,,,,,,,,,,,36.1/36.2/36.7/36.0,2494,1660,27.3,2.46,2.5,6.41,,,,,,,
+,,,5,11-22,,,,,,9,28,,,,,,,,,,,,,,,,,,36.5/36.2/36.1/36.4,2421,2410,26,2.62,2.6,6.84,1.47,,,,,,
+,,,6,11-23,,,,,,8,27,,,,,,,,,,,,,,,,,,36.7/36.6/36.5/36.3,2572,2060,26.7,2.34,2.7,3.1,,,,,,,
+,,,7,11-24,,,,,,8,28,,,,,,,,,,,,,,,,,,36.5/36.3/36.1/37.1,3028,2590,26.2,2.45,2.6,3.1,,,,,,,
+,,,8,11-25,,,,,,8,29,,,,,,,,,,,,,,,,,,37.9/36.9/36.5/38.2,2100,2300,26.9,2.51,3.1,2.56,0.874,,,,,,
+,,,9,11-26,,,,,,8,26,,,,,,,,,,,,,,,,,,37.2/36.6/37.4/36.5,2339,2970,24.7,2.55,2.7,15.12,,,,,,,
+,,,10,11-27,,,,,,9,25,,,,,,,,,,,,,,,,,,36.0/36.7/37.3/37.3,2335,2670,21.8,2.42,2.5,20.73,,,,,,,
+,,,11,11-28,,,,,,9,25,,,,,,,,,,,,,,,,,,36.6/36.0/36.1/36.2,2442,1880,23.6,2.21,2.8,14.75,,,,,,,
+,,,12,11-29,,,,,,9,23,,,,,,,,,,,,,,,,,,36.0/36.1/37.1/37.9,2457,2663,25.1,2.2,2.6,8.36,,,,,,,
+,,,13,11-30,,,,,,9,28,,,,,,,,,,,,,,,,,,36.9/36.0/36.5/37.2,3411,2314,22.2,2.18,2.5,6.28,,,,,,,
+,,,14,12-1,,,,,,10,25,,,,,,,,,,,,사망,,,,,,36.9/36.5/36.5/37.4,2042,1465,29.7,2.1,2.5,7.84,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,12-15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+15,1015662,한봉수,0,12-17,1,85,,,,6,24,"HTN, DM, CKD(stage II~III), CAD (LAD 50%), osteoporosis",1,0,0,0,5,폐렴,CRAB,0,<=0.5,"Organism : Acinetobacter baumannii, Colony count : Heavily .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         4.0              S 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        2.0              S 
+   Trimethoprim/Sulfamethoxazole      <=20.0           S 
+",,,,,,,36.6/36.2/36.3/36.2,4236,4500,26.4,1.07,2.4,4.48,,,colistin: 12/17-12/29,,,,
+,,,1,12-18,,154,,,,6,24,,,,,,,,,,,,,,,,,,37.1/36.4/36.8/36.8,3117,1900,27.9,1.02,3,3.27,,,,,,,
+,,,2,12-19,,53,,,,6,21,,,,,,,,,,,,,,,,,,36.2/36.1/37.2/36.4,3264,4200,22.5,1.13,2.3,2.6,,,,,,,
+,,,3,12-20,,,,,,6,24,,,,,,,,,,,,,,,,,,36.6/36.7/36.3/36.6,3096,3110,25.8,1.03,3.3,2.02,0.151,,,,,,
+,,,4,12-21,,,,,,6,24,,,,,,,,,,,,,,,,,,36.9/36.9/36.6/36.8,2921,2940,26.5,1.11,2.9,1.37,,,,,,,
+,,,5,12-22,,,,,,5,22,,,,,,,,,,,,,,,,,,36.9/36.1/36.9/37.1,3164,2940,26.1,1.13,3,0.92,,,,,,,
+,,,6,12-23,,,,,,4,23,,,,,,,,,,,,,,,,,,36.0/35.8/35.9/36.7,3182,3290,27.2,1.08,2.8,0.74,0.114,,,,,,
+,,,7,12-24,,,,,,5,22,,,,,,,,,,,,,,,,,,36.8/37.0/36.2/36.8,3415,2685,26.5,0.98,2.7,1.09,,,,,,,
+,,,8,12-25,,,,,,6,22,,,,,,,,,,,,,,,,,,37.1/36.8/36.9/36.8,3256,2660,24.6,1.14,3,2.37,,,,,,,
+,,,9,12-26,,,,,,8,22,,,,,,,,,,,,,,,,,,37.5/36.3/36.2/36.9,3090,2400,24.5,1.26,2.7,4.14,,,,,,,
+,,,10,12-27,,,,,,5,20,,,,,,,,,,,,,,,,,,36.6/36.3/36.7/36.3,3090,2780,27.4,1.46,3.6,2.81,0.147,,,,,,
+,,,11,12-28,,,,,,6,21,,,,,,,,,,,,,,,,,,36.3/36.3/37.3/36.8,2983,2370,25,1.5,3,1.46,,,,,,,
+,,,12,12-29,,,,,,6,23,,,,,,,,,,,,,,,,,,37.0/37.2/37.0/36.5,2077,2340,24.1,1.55,3,1.64,,,,,,,
+,,,13,12-30,,,,,,6,22,,,,,,,,,,,,,,,,,,36.2/36.8/36.8/36.9,3412,1905,27.1,1.78,3,2.72,0.171,,,,,,
+,,,14,12-31,,,,,,7,21,,,,,,,,,,,,,,,,,,36.5/35.8/36.8/36.7,3672,2170,26.6,1.77,3.2,4.24,,,,,,,
+,,,16,2022-01-02,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.73,,,,,,,
+,,,20,1-6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.33,,,,,,,
+,,,24,1-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.67,,,,,,,
+,,,28,1-14,,,,,,4,18,,,,,,,,,,,,모름,,,,1/11퇴실,1/11퇴원,,,,30.3,1.22,2.9,6.09,,,,,,,
+16,58193,오정근,0,12-24,1,69,,,,10,25,"epilepsy, r/o parkinson's dz, dementia h/o t-SAH",,1,1,0,4,폐렴,"CRAB, CRPA",0,<=0.5 / 1 (CRPA),"Organism : Pseudomonas aeruginosa, Colony count : Moderately .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           1.0              S 
+   Piperacillin                                        I 
+   Piperacillin/Tazobactam                             I 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        16.0             I 
+   Cefepime                           4.0              S 
+   Imipenem                           8.0              R 
+   Meropenem                          1.0              S 
+   Gentamicin                         <=1.0            S 
+   Ciprofloxacin                      2.0              I 
+   Levofloxacin                       >=8.0            R 
+   Tigecycline                        >=8.0            R 
+   Aztreonam                          2.0              S 
+   Amikacin                           <=2.0            S 
+===========================================================================
+*Colistin MIC 결과는 CLSI 가이드라인에서 권고하는 검사방법에 준하지 않는 방법으로 위감수성결과를 보일수 있습니다.
+===========================================================================
+  Isolate  : #02
+  Organism : Acinetobacter baumannii, Colony count : Heavily .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         >=16.0           R 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        >=8.0            R 
+   Trimethoprim/Sulfamethoxazole      >=320.0          R ",,,,,,,37.0/36.6/37.1/37.2,1760,40,22.9,3.76,2.1,8.21,,,"colistin: 12/24-1/6
+levofloxacin: 12/17- 1/8",,,,
+,,,1,12-25,,168,,,,11,21,,,,,,,,,,,,,,,,,,37.7/37.2/37.2/37.4,1860,2050,23.6,5.11,2.2,10.54,,,,,,,
+,,,2,12-26,,68,,,,9,22,,,,,,,,,,,,,,,,,,37.3/36.9/37.3/37.2,2102,55,22.5,3.72,2,10.71,,,,,,,
+,,,3,12-27,,,,,,10,21,,,,,,,,,,,,,,,,,,36.7/36.5/37.3/37.0,3209,27,20.7,4.87,2.3,6.16,,,,,,,
+,,,4,12-28,,,,,,8,24,,,,,,,,,,,,,,,,,,36.5/36.3/37.5/37.0,2078,3020,21.4,5.54,2.1,4.64,,,,,,,
+,,,5,12-29,,,,,,7,21,,,,,,,,,,,,,,,,,,36.5/36.4/37.4/37.4,2082,330,24.3,3.82,2.4,4.03,,,,,,,
+,,,6,12-30,,,,,,6,24,,,,,,,,,,,,,,,,,,38.1/36.6/36.9/37.0,1668,3377,25.9,4.9,2.2,4.61,,,,,,,
+,,,7,12-31,,,,,,5,21,,,,,,,,,,,,,,,,,,36.5/36.9/36.8/36.5,1012,407,26.7,3.64,2.6,5.01,,,,,,,
+,,,8,1-1,,,,,,6,22,,,,,,,,,,,,,,,,,,37.5/36.8/36.6/36.5,1190,3435,24.4,4.55,2.6,5.38,,,,,,,
+,,,9,1-2,,,,,,6,23,,,,,,,,,,,,,,,,,,36.9/36.9/37.4/36.5,1965,30,24.6,3.17,2.3,6.04,,,,,,,
+,,,10,1-3,,,,,,5,24,,,,,,,,,,,,,,,,,,36.9/36.9/36.8/36.6,830,75,24.4,4.03,2.6,5.56,,,,,,,
+,,,11,1-4,,,,,,6,22,,,,,,,,,,,,,,,,,,37.3/36.9/36.7/37.3,1810,2725,21.4,4.93,2.5,,,,,,,,
+,,,12,1-5,,,,,,5,20,,,,,,,,,,,,,,,,,,37.2/37.7/37.7/36.6,3290,340,24,3.31,2.7,,,,,,,,
+,,,13,1-6,,,,,,8,24,,,,,,,,,,,,,,,,,,37.5/37.3/37.0/37.7,2580,3550,22.5,3.76,2.4,,,,,,,,
+,,,14,1-7,,,,,,7,28,,,,,,,,,,,,,,,,,,38.1/37.5/37.3/38.2,1665,306,25.2,2.89,2.9,,,,,,,,
+,,,15,2022-01-08,2022-01-08,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.85,,,,,,,
+,,,20,2022-01-13,2022-01-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,26,2022-01-19,2022-01-19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.63,,,,,,,
+,,,28,1-21,,,,,,8,23,,,,,,,,,,,,생존,,,,3/21퇴실,3/21퇴원,37.2/37.5/36.3/36.1,1780,657,27,2.37,2.8,5.29,,,,,,,
+17,1565891,엄경호,0,1-4,1,74,,,,6,22,0,0,0,0,0,3,폐렴,CRAB,0,<=0.5,"Organism : Acinetobacter baumannii, Colony count : Heavily .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         >=16.0           R 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        >=8.0            R 
+   Trimethoprim/Sulfamethoxazole      >=320.0          R ",,,,,,,36.1/37.1/37.2/37.0,2741,2725,30.5,0.43,2.8,21.47,,,"colistin: 1/4-1/12
+ganciclovir: 1/7-1/12
+teicoplanin: 1/7-1/12
+",,,,
+,,,1,1-5,,170,,,,6,24,,,,,,,,,,,,,,,,,,37.8/37.7/37.0/36.9,3200,2748,30.3,0.52,2.4,30.5,,,,,,,
+,,,2,1-6,,70,,,,6,23,,,,,,,,,,,,,,,,,,36.7/36.2/36.7/36.8,2686,2480,27.6,0.4,2.3,23.97,,,,,,,
+,,,3,1-7,,,,,,6,26,,,,,,,,,,,,,,,,,,38.1/37.7/37.1/37.7,2898,2210,28.4,0.41,2.6,19.2,,,,,,,
+,,,4,1-8,,,,,,7,31,,,,,,,,,,,,,,,,,,37.6/37.8/37.5/37.8,2224,1730,24.3,0.5,2.2,22.26,,,,,,,
+,,,5,1-9,,,,,,7,28,,,,,,,,,,,,,,,,,,38.1/37.8/37.8/37.3,2907,1330,25.5,0.48,2.3,34.99,,,,,,,
+,,,6,1-10,,,,,,6,26,,,,,,,,,,,,,,,,,,36.8/36.7/38.8/37.6,3280,3040,25,0.51,2.2,41.56,,,,,,,
+,,,7,1-11,,,,,,6,36,,,,,,,,,,,,,,,,,,37.4/37.4/37.2/37.4,3362,2180,24.3,0.76,2.3,39.25,,,,,,,
+,,,8,1-12,,,,,,7,,,,,,,,,,,,,사망,,,,,,37.4/37.7/36.8/36.5,,,21.4,0.11,2.3,32.48,,,,,,,
+,,,9,1-13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,10,1-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,11,1-15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,1-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,1-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,1-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,2-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+18,893916,최은주,0,1-6,0,67,,,,6,23,hypothyroidism,0,0,0,0,2,폐렴,"CRAB,CRKP",0,<=0.5 (CRAB),"Organism : Acinetobacter baumannii, Colony count : Heavily .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         >=16.0           R 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        >=8.0            R 
+   Trimethoprim/Sulfamethoxazole      >=320.0          R 
+===========================================================================
+*Colistin MIC 결과는 CLSI 가이드라인에서 권고하는 검사방법에 준하지 않는 방법으로 위감수성결과를 보일수 있습니다.
+===========================================================================
+  Isolate  : #02
+  Organism : Klebsiella pneumoniae, Colony count : Moderately .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   ESBL                               Pos              + 
+   Ertapenem                          4.0              R 
+   Imipenem                           >=16.0           R 
+   Ampicillin                         >=32.0           R 
+   Amoxicillin/CA                     >=32.0           R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefazolin                          >=64.0           R 
+   Cefoxitin                          <=4.0            S 
+   Cefotaxime                         32.0             R 
+   Ceftazidime                        16.0             R 
+   Cefepime                           2.0              S 
+   Aztreonam                          >=64.0           R 
+   Amikacin                           <=2.0            S 
+   Gentamicin                         <=1.0            S 
+   Ciprofloxacin                      >=4.0            R 
+   Tigecycline                        2.0              S 
+   Trimethoprim/Sulfamethoxazole      40.0             S ",,,,,,,373./36.6/36.5/36.5,3334,2440,23.2,0.4,3.1,,,,"colistin: 1/6-1/15
+ganciclovir: 1/5-1/15",,,,
+,,,1,1-7,,155,,,,8,26,,,,,,,,,,,,,,,,,,37.1/37.1/36.1/36.6,3435,3680,26.7,0.42,3.1,,,,,,,,
+,,,2,1-8,,53,,,,7,25,,,,,,,,,,,,,,,,,,37.8/36.5/36.3/37.7,3435,3660,26.5,0.44,2.8,,,,,,,,
+,,,3,1-9,,,,,,8,25,,,,,,,,,,,,,,,,,,36.3/36.2/36.5/37.0,2932,3120,26,0.57,3.1,,,,,,,,
+,,,4,1-10,,,,,,7,25,,,,,,,,,,,,,,,,,,36.8/36.3/37.8/36.6,3008,2910,25.6,0.69,3,,,,,,,,
+,,,5,1-11,,,,,,7,28,,,,,,,,,,,,,,,,,,36.4/37.3/36.5/36.3,1607,1540,24.9,0.58,3.3,,,,,,,,
+,,,6,1-12,,,,,,6,25,,,,,,,,,,,,,,,,,,37.2/37.3/37.2/36.8,3459,3470,21.7,0.59,3,,,,,,,,
+,,,7,1-13,,,,,,7,25,,,,,,,,,,,,,,,,,,36.8/36.3/36.6/37.6,3472,2290,28.4,0.57,3.8,,,,,,,,
+,,,8,1-14,,,,,,7,23,,,,,,,,,,,,,,,,,,37.5/37.8/37.5/37.0,3042,2450,27.8,0.63,3.3,,,,,,,,
+,,,9,1-15,,,,,,7,25,,,,,,,,,,,,,,,,,,37.0/37.5/37.9/37.9,3668,225,28.3,0.52,3,,,,,,,,
+,,,10,1-16,,,,,,,,,,,,,,,,,,,사망,,,,,,36.4,,,,,,,,,,,,,
+,,,11,1-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,12,1-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,1-19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,1-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,2-3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19,1565763,서영길,0,1-21,1,68,,,,8,21,"Stable angina, HTN, DM",1,0,1,1,3,폐렴,CRAB,0,<=0.5,"Organism : Acinetobacter baumannii, Colony count : Moderately .
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               >=32.0           R 
+   Piperacillin                       >=128.0          R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        >=64.0           R 
+   Cefepime                           >=64.0           R 
+   Imipenem                           >=16.0           R 
+   Meropenem                          >=16.0           R 
+   Gentamicin                         >=16.0           R 
+   Ciprofloxacin                      >=4.0            R 
+   Levofloxacin                       >=8.0            R 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        >=8.0            R 
+   Trimethoprim/Sulfamethoxazole      >=320.0          R ",,,,,,,36.9/36.6/36.3/37.3,3820,2550,31,0.98,3.1,19.78,,,"colistin: 1/1-1/28
+minocycline: 1/20-1/31
+meropenem: 12/27-1/17
+",,,,
+,,,1,1-22,,166,,,,9,21,,,,,,,,,,,,,,,,,,36.5/36.3/36.4/36.3,2580,2650,31.2,1.26,2.9,13.53,,,,,,,
+,,,2,1-23,,65.5,,,,9,23,,,,,,,,,,,,,,,,,,36.4/36.4/36.7/36.3,3032,2050,27.1,1.85,2.9,17.85,,,,,,,
+,,,3,1-24,,,,,,9,24,,,,,,,,,,,,,,,,,,36.3/36.4/36.3/36.4,2324,2360,30.8,2.26,3.1,12.91,0.849,,,,,,
+,,,4,1-25,,,,,,9,25,,,,,,,,,,,,,,,,,,36.3/36.8/36.5/36.5,2208,2240,30.7,2.47,3.2,12.31,,,,,,,
+,,,5,1-26,,,,,,9,29,,,,,,,,,,,,,,,,,,36.5/36.2/36.4/37.1,2896,2670,29.1,2.42,2.7,11.93,,,,,,,
+,,,6,1-27,,,,,,8,26,,,,,,,,,,,,,,,,,,36.5/36.2/36.1/36.2,1993,2090,29.6,2.47,3.2,10.21,0.951,,,,,,
+,,,7,1-28,,,,,,9,24,,,,,,,,,,,,,,,,,,36.8/36.9/36.2/36.2,2032,1910,28.6,2.39,3.1,8.61,,,,,,,
+,,,8,1-29,,,,,,8,24,,,,,,,,,,,,,,,,,,37.0/36.6/36.6/36.3,1913,1960,28.7,2.89,3.1,9.93,,,,,,,
+,,,9,1-30,,,,,,8,25,,,,,,,,,,,,,,,,,,36.4/36.1/36.9/37.0,2276,1915,28.3,3.15,3,6.83,,,,,,,
+,,,10,1-31,,,,,,9,26,,,,,,,,,,,,,,,,,,36.4/36.4/36.7/36.4,4254,3635,29.2,3.57,2.9,11.8,1.32,,,,,,
+,,,11,2-1,,,,,,7,24,,,,,,,,,,,,,,,,,,36.3/36.2/36.2/36.2,3823,3760,28.8,3.38,3.3,11.54,,,,,,,
+,,,12,2-2,,,,,,7,25,,,,,,,,,,,,,,,,,,36.3/36.2/36.3/36.5,1655,1450,27.8,3.25,3.3,6.68,,,,,,,
+,,,13,2-3,,,,,,7,24,,,,,,,,,,,,,,,,,,36.4/36.3/36.3/36.2,1627,1440,28.9,3.3,3.1,3.83,0.662,,,,,,
+,,,14,2-4,,,,,,7,24,,,,,,,,,,,,,,,,,,36.4/36.4/36.3/36.4,1416,1650,29.4,3.21,3.3,2.76,0.472,,,,,,
+,,,16,2-6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.27,,,,,,,
+,,,20,2-10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.1,,,,,,,
+,,,24,2-14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.12,,,,,,,
+,,,28,2-18,,,,,,7,26,,,,,,,,,,,,생존(5/29사망),,,,5/29퇴실,5/29퇴실,36.3/36.2/36.3/36.3,1959,1730,30.9,1.59,3.2,1.49,0.252,,,,,,
+20,1572777,이상호,0,2-4,1,64,,,,4,15,hypertension,0,0,0,0,4,요로감염,CRE,1,,"Organism : Escherichia coli.
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   ESBL                               Pos              + 
+   Ertapenem                                           R 
+   Imipenem                                            R 
+   Ampicillin                         >=32.0           R 
+   Amoxicillin/CA                     >=32.0           R 
+   Piperacillin/Tazobactam            >=128.0          R 
+   Cefazolin                          >=64.0           R 
+   Cefoxitin                          16.0             I 
+   Cefotaxime                         >=64.0           R 
+   Ceftazidime                        16.0             R 
+   Cefepime                           32.0             R 
+   Aztreonam                          >=64.0           R 
+   Amikacin                           <=2.0            S 
+   Gentamicin                         <=1.0            S 
+   Ciprofloxacin                      >=4.0            R 
+   Tigecycline                        <=0.5            S 
+   Trimethoprim/Sulfamethoxazole      <=20.0           S ",,,,,,,37.4/37.1/36.9/37.2,2296,1760,37.1,0.34,3.2,4.26,,,colistin: 2/4-2/13,,,,
+,,,1,2-5,,172,,,,4,15,,,,,,,,,,,,,,,,,,37.3/36.6/37.4/37.0,2729,2135,35.1,0.27,3.1,1.88,,,,,,,
+,,,2,2-6,,66.5,,,,4,14,,,,,,,,,,,,,,,,,,37.4/37.4/37.2/36.7,2716,2350,38.2,0.37,3.5,1.58,,,,,,,
+,,,3,2-7,,,,,,4,15,,,,,,,,,,,,,,,,,,36.8/36.8/36.9/36.7,1633,1600,38.4,0.43,3.6,1.09,,,,,,,
+,,,4,2-8,,,,,,4,15,,,,,,,,,,,,,,,,2/8퇴실,,37.2/36.9/36.2/36.3,1330,1010,37.8,0.49,3.6,1.44,,,,,,,
+,,,5,2-9,,,,,,4,14,,,,,,,,,,,,,,,,,,36.1/36.6/38.4/37.2,2150,1263,37.9,0.5,3.7,1.53,,,,,,,
+,,,6,2-10,,,,,,2,13,,,,,,,,,,,,,,,,,,38.6/36.55/37.3/36.9,2850,1730,37.8,0.63,3.6,7.28,0.31,,,,,,
+,,,7,2-11,,,,,,1,9,,,,,,,,,,,,,,,,,,38.3/37.6/38.6/36.3,3400,2500,,,,,,,,,,,
+,,,8,2-12,,,,,,1,11,,,,,,,,,,,,,,,,,,38.0/36.8/36.8/36.9,3050,2800,31.8,0.72,,8.55,0.28,,,,,,
+,,,9,2-13,,,,,,1,8,,,,,,,,,,,,,,,,,,36.2/36.4/36.0/36.0,2850,2800,,,,,,,,,,,
+,,,10,2-14,,,,,,1,7,,,,,,,,,,,,,,,,,,36.4/36.4/36.5/36.5,2450,2400,31.3,0.696,3.2,3.46,0.129,,,,,,
+,,,11,2-15,,,,,,,9,,,,,,,,,,,,,,,,,2/15 퇴원,36,,,,,,,,,,,,,
+,,,12,2-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,2-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,2-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,3-4,,,,,,,,,,,,,,,,,,,모름,,,,,,,,,,,,,,,,,,,
+21,1564804,이상규,0,2-4,1,60,,,,3,20,"dementia, hyperlipidemia",0,0,0,0,6,폐렴,A. baumannii,1,<=0.5,"Acinetobacter baumannii.
+---------------------------------------------------------------------------
+   Antibiotics                        MIC       Susceptibility
+   ------------------------------------------------------------------------
+   Colistin                           <=0.5            S 
+   Ampicillin/Sulbactam               <=2.0            S 
+   Piperacillin                       8.0              S 
+   Piperacillin/Tazobactam            <=4.0            S 
+   Cefotaxime                         16.0             I 
+   Ceftazidime                        4.0              S 
+   Cefepime                           2.0              S 
+   Imipenem                           <=0.25           S 
+   Meropenem                          <=0.25           S 
+   Gentamicin                         <=1.0            S 
+   Ciprofloxacin                      <=0.25           S 
+   Levofloxacin                       <=0.12           S 
+   Minocycline                        <=1.0            S 
+   Tigecycline                        <=0.5            S 
+   Trimethoprim/Sulfamethoxazole      <=20.0           S 
+",,,,,,,37.1/36.7/37.0/36.7,3983,2640,24.2,0.38,3.1,6.86,,,"colistin: 2/4
+ amp/sul 2/5-2/15",,,,
+,,,1,2-5,,180,,,,3,24,,,,,,,,,,,,,,,,,,36.8/37.2/37.8/37.2,3622,3070,27.4,0.45,3,9.84,,,,,,,
+,,,2,2-6,,42,,,,3,20,,,,,,,,,,,,,,,,,,36.8/36.3/36.0/37.0,3465,3105,28.1,0.34,3,17.27,,,,,,,
+,,,3,2-7,,,,,,3,19,,,,,,,,,,,,,,,,,,36.6/36.9/36.8/36.1,3607,3230,28.4,0.42,2.8,8.11,,,,,,,
+,,,4,2-8,,,,,,3,20,,,,,,,,,,,,,,,,,,36.5/36.6/36.3/36.0,2899,2510,28,0.36,3,5,,,,,,,
+,,,5,2-9,,,,,,3,19,,,,,,,,,,,,,,,,,,36.3/36.0/36.4/36.7,2751,2400,29.1,0.36,3.2,3.18,,,,,,,
+,,,6,2-10,,,,,,5,21,,,,,,,,,,,,,,,,,,36.0/36.0/36.7/36.7,2430,2210,28.7,0.37,3.2,1.76,,,,,,,
+,,,7,2-11,,,,,,4,17,,,,,,,,,,,,,,,,,,36.5/36.0/35.8/36.4,2706,2220,30.7,0.41,3.5,1.4,,,,,,,
+,,,8,2-12,,,,,,3,19,,,,,,,,,,,,,,,,,,36.4/36.0/35.9/36.3,2450,2420,29.6,0.41,3.4,1.05,,,,,,,
+,,,9,2-13,,,,,,3,19,,,,,,,,,,,,,,,,,,36.0/36.1/36.3/36.2,2286,2085,28.7,0.41,3.4,0.61,,,,,,,
+,,,10,2-14,,,,,,3,19,,,,,,,,,,,,,,,,,,36.2/35.8/36.1/36.5,2690,2275,28.7,0.42,3.5,0.45,,,,,,,
+,,,11,2-15,,,,,,3,19,,,,,,,,,,,,,,,,2/15퇴실,2/15퇴원,36.8/36.3/36.2,,,29.8,0.45,3.6,0.4,,,,,,,
+,,,12,2-16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,13,2-17,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,14,2-18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,28,3-4,,,,,,,,,,,,,,,,,,,생존,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
