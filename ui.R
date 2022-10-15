@@ -4,7 +4,7 @@ library(shinydashboard)
 library(shinyTime)
 library(lubridate)
 library(shinythemes)
-
+library(rhandsontable)
 
 tags$head(
   tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css")
@@ -16,7 +16,7 @@ shiny::navbarPage(
 
   # Title page ----
   title = "Colistin TDM",
-  theme = shinytheme("paper"),
+  theme = shinytheme("spacelab"),
   # selected = 'dosa', #icon = "prescription",
 
   # Chapter 1. Patient Info `pinfo` ----
@@ -55,7 +55,8 @@ shiny::navbarPage(
         #           selectize = TRUE, width = NULL, size = NULL)
         # ,
         numericInput("age", "Age (year)", 40, min = NA, max = NA, step = 1),
-        numericInput("weight", "Weight (kg)", 70, min = NA, max = NA, step = 0.1)
+        numericInput("weight", "Weight (kg)", 70, min = NA, max = NA, step = 0.1),
+        numericInput("albumin", "Albumin level", 2, min = NA, max = NA, step = 0.1)
       )
     ),
     column(
@@ -85,34 +86,43 @@ shiny::navbarPage(
       box(
         width = NULL, status = "primary",
         solidHeader = TRUE,
-        title = "Upload Dosing History",
-        fileInput("file1", "Choose File",
-          accept = c(
-            "text/csv",
-            "text/comma-separated-values,text/plain",
-            ".csv"
-          )
+        title = "Dosing History input",
+        selectInput("dose_type", "Input type", 
+                    c("Upload csv file" = "csv",
+                    "Use input table below" = "table")),
+        conditionalPanel("input.dose_type == 'csv'",
+                fileInput("file1", "Choose File (Use input table format)",
+                  accept = c(
+                    "text/csv",
+                    "text/comma-separated-values,text/plain",
+                    ".csv"
+                  )
+                )
         ),
         tags$hr(),
-        selectInput("rt", "Administration Route", c("IV Infusion"),
-          selected = NULL, multiple = FALSE,
-          selectize = TRUE, width = NULL, size = NULL
+        conditionalPanel(
+          "input.dose_type == 'table'",
+          h4("Dosing history input table"),
+          rHandsontableOutput('hot'),
+          p("Remove/add row : right-click!"),
+          br(),
+          actionButton("saveBtn", "Save history")
         )
       ),
-      tags$hr(),
-      box(
-        width = NULL,
-        background = "teal",
-        "Dosing History Template (CSV)",
-        tags$p(),
-        downloadButton("downloadData", "Download")
-      )
+      tags$hr()
     ),
     column(
       width = 4,
       box(
         width = NULL, status = "primary", solidHeader = TRUE, title = "Dosing History",
-        tableOutput("dosing_history_contents")
+        verbatimTextOutput("test")
+      ),
+      conditionalPanel(
+              "input.dose_type == 'csv'",
+              box(
+                width = NULL, status = "primary", solidHeader = TRUE, title = "CSV format (Example)",
+                verbatimTextOutput("csvbox")
+              )
       )
     ),
     column(width = 2)
@@ -122,7 +132,7 @@ shiny::navbarPage(
 
   tabPanel(
     icon = icon("flask"),
-    title = "Obesrvations",
+    title = "Observations",
     tabName = "obs",
     h2("Observations", align = "center", style = "color:#dbdbdb; font-weight:bold"),
     tags$hr(),
@@ -150,7 +160,7 @@ shiny::navbarPage(
             format = "yyyy-mm-dd", startview = "month", weekstart = 1,
             language = "en", width = NULL
           ),
-          timeInput("obsTime", "Time", value = strptime("23:00", "%R"), seconds = FALSE)
+          timeInput("obsTime", "Time", value = strptime("09:00", "%R"), seconds = FALSE)
         )
       ),
       conditionalPanel(
@@ -161,9 +171,14 @@ shiny::navbarPage(
             min = NA, max = NA, step = NA,
             width = NULL
           ),
-          textInput("obsd1", "Time", value = "2017-05-06", width = NULL, placeholder = NULL),
-          timeInput("obst1", "Date", value = strptime("23:00", "%R"), seconds = FALSE)
+          dateInput("obsDate1", "Date", 
+            value = "2017-05-06", min = NULL, max = NULL,
+            format = "yyyy-mm-dd", startview = "month", weekstart = 1,
+            language = "en", width = NULL
+          ),
+          timeInput("obsTime1", "Time", value = strptime("09:00", "%R"), seconds = FALSE)
         ),
+        verbatimTextOutput('test2'),
         tags$hr(),
         box(
           width = NULL, solidHeader = TRUE, title = "Second Observation",
@@ -171,8 +186,12 @@ shiny::navbarPage(
             min = NA, max = NA, step = NA,
             width = NULL
           ),
-          textInput("obsd2", "Time", value = "2017-01-01", width = NULL, placeholder = NULL),
-          timeInput("obst2", "Date", value = strptime("23:30", "%R"), seconds = FALSE)
+          dateInput("obsDate2", "Date", 
+            value = "2017-05-06", min = NULL, max = NULL,
+            format = "yyyy-mm-dd", startview = "month", weekstart = 1,
+            language = "en", width = NULL
+          ),
+          timeInput("obsTime2", "Time", value = strptime("21:00", "%R"), seconds = FALSE)
         )
       )
     ),
@@ -183,7 +202,7 @@ shiny::navbarPage(
 
   tabPanel(
     icon = icon("line-chart"),
-    title = "PK profile 1",
+    title = "Parameter estimation",
     tabName = "main",
     column(
       width = 3,
@@ -196,10 +215,6 @@ shiny::navbarPage(
         tableOutput("outputtable2"),
         tags$hr()
       ),
-      box(
-        width = NULL, status = "primary", solidHeader = TRUE, title = "",
-        tableOutput("outputtable3")
-      )
     ),
     column(
       width = 9,
@@ -214,27 +229,27 @@ shiny::navbarPage(
 
   tabPanel(
     icon = icon("line-chart"),
-    title = "PK profile 2",
+    title = "Simulation",
     tabName = "main2",
     column(
       width = 3,
       box(
         width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("newdose", "Next dose (mg)", 1000,
+        sliderInput("amt", "Next dose (mg)", 1000,
           min = 0, max = 2000, step = 250, ticks = TRUE,
           width = NULL
         )
       ),
       box(
         width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("newtau", "New dosing interval (hours)", 12,
+        sliderInput("tau", "New dosing interval (hours)", 12,
           min = 4, max = 48, step = 4,
           width = NULL
         )
       ),
       box(
         width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("newinf", "Infusion duration", 1,
+        sliderInput("dur", "Infusion duration", 1,
           min = 0.5, max = 4, step = 0.5,
           width = NULL
         )
