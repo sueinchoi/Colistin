@@ -82,11 +82,12 @@ dxdt_MCENTB = K15*CENT - K50*MCENTB;
 $TABLE
 capture DV1 = (MCENTA/V3*1000);
 capture DV2 = (MCENTB/V5*1000);
-capture DV= DV1 + DV2;
+
 '
 
-
 mod <- mcode_cache("map", code)
+
+
 
 # 1. functions
 
@@ -97,16 +98,14 @@ calculate_crcl <- function(age, weight, sex, scr) {
 
 init <- c(ETA1 = -0.3, 
           ETA2 = 0.2, 
-          ETA3 = 0.1, 
-          ETA4 = 0.1,
-          ETA5 = 0.1,
-          ETA6 = 0.1,
-          ETA7 = 0.1,
-          ETA8 = 0.1,
-          ETA9 = 0.1
+          ETA3 = 0, 
+          ETA4 = 0,
+          ETA5 = 0,
+          ETA6 = 0,
+          ETA7 = 0,
+          ETA8 = 0,
+          ETA9 = 0
           )
-sigma <- matrix(0.0032)
-
 
 mapbayes <- function(eta, d, ycol, m, dvcol = ycol, pred = FALSE) {
   sig2 <- as.numeric(sigma)
@@ -116,14 +115,14 @@ mapbayes <- function(eta, d, ycol, m, dvcol = ycol, pred = FALSE) {
     unlist() %>%
     matrix(nrow = 1)
   m <- param(m, eta)
-  out <- mrgsim(m, data = d, output = "df", maxsteps = 500000)
+  out <- mrgsim(m, data = d, output = "df")
   if (pred) {
     return(out)
   }
   # http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3339294/
   sig2j <- out[[dvcol]]^2 * sig2
   sqwres <- log(sig2j) + (1 / sig2j) * (d[[ycol]] - out[[dvcol]])^2
-  nOn <- diag(eta_m %*% omega %*% t(eta_m))
+  nOn <- diag(eta_m %*% omega.inv %*% t(eta_m))
   return(sum(sqwres, na.rm = TRUE) + nOn)
 }
 
@@ -131,14 +130,14 @@ mapbayes <- function(eta, d, ycol, m, dvcol = ycol, pred = FALSE) {
 
 # TVCL1 <- 20 # L
 # TVVC1 <- 100 # /h
+
 CLCR_exp <- 1
 Albumin_exp <- 1
 AGE_exp <- 1
 WT_exp <- 1
-TVCL_base <- 19
-TVV1_base <- 200
 
-omega <- dmat(0.23, -0.78, 0.62, 0, 0, 0, 0, 0, 0)
+
+omega <- omat(dmat(0.23, -0.78, 0.62, 0, 0, 0, 0, 0, 0))
 # omega.inv <- solve(omega)
 sigma <- matrix(0.0032)
 
@@ -192,7 +191,7 @@ shiny::shinyServer(function(input, output) {
   # creatinine_clearance ----
   
   output$creatinine_clearance <- renderText({
-    return(calculate_crcl(input$age, input$weight, input$sex,input$scr) %>% round(digits = 2))
+    return(calculate_crcl(input$age, input$weight, input$sex, input$albumin, input$scr) %>% round(digits = 2))
   })
 
 
@@ -250,19 +249,17 @@ shiny::shinyServer(function(input, output) {
 
     # Typical Values - 
     
-    
     CLCR <- calculate_crcl(input$age, input$weight, input$sex, input$scr)
     AGE <- input$age
     WT <- input$weight
     Albumin <- input$albumin
     TVCL = TVCL_base*CLCR**CLCR_exp*Albumin**Albumin_exp
     TVV1 = TVV1_base*(AGE/68)**AGE_exp*(WT/60)**WT_exp
-    
-    
+
+
     mod <- param(mod, list(TVCL = TVCL,
-                           TVV1 = TVV1))
-    
-    
+                            TVV1 = TVV1))
+
 
     shiny::withProgress(
       message = 'Minimization in progress', 
@@ -330,7 +327,7 @@ shiny::shinyServer(function(input, output) {
       param_eta = FIT$par,
       table1 = dose_con_data,
       table2 = tibble(`CL(L/h)` = TVCL*(exp(FIT$par[1])),
-                      `V(L)` = TVV1*(exp(FIT$par[2]))),
+                      `V(L)` = TVVC*(exp(FIT$par[2]))),
       plot1 = colistin_pk_plot
     )
     
@@ -367,7 +364,9 @@ shiny::shinyServer(function(input, output) {
     pdata <- rbind(dose_con_data %>% filter(evid == 1) %>% mutate(addl = 0, ii = 0), new_dose)
 
 
-    pred <- mapbayes(c(ETA1 = 0,ETA2 = 0, ETA3 = 0, ETA4 = 0, ETA5 = 0, ETA6 =0, ETA7 = 0, ETA8 = 0, ETA9 = 0), ycol = "DV", pdata, pmod, pred = TRUE) %>%
+
+
+    pred <- mapbayes(c(ETA1 = 0, ETA2 = 0), ycol = "DV", pdata, pmod, pred = TRUE) %>%
       as.data.frame() %>%
       filter(time > 0)
     
