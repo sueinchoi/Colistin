@@ -145,7 +145,10 @@ ui <- shiny::navbarPage(
   # selected = 'dosa', #icon = "prescription",
   
   # Chapter 1. Patient Info `pinfo` ----
-  
+  tags$style(type="text/css",
+             ".shiny-output-error { visibility: hidden; }",
+             ".shiny-output-error:before { visibility: hidden; }"
+  ),
   tabPanel(
     # icon = icon("user-plus"),
     icon = icon("address-card"),
@@ -202,40 +205,7 @@ ui <- shiny::navbarPage(
     tabName = "sim",
     column(
       width = 3,
-      box(
-        width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("LDOSE", "Loading dose (mg)", 1000,
-                    min = 0, max = 2000, step = 250, ticks = TRUE,
-                    width = NULL
-        )
-      ),
-      box(
-        width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("DOSE", "Maintenance dose (mg)", 1000,
-                    min = 0, max = 2000, step = 250, ticks = TRUE,
-                    width = NULL
-        )
-      ),
-      box(
-        width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        radioButtons("INT", "Interval (hr)",
-                      inline = TRUE,
-                      choices = list(
-                        "6hr" = "6", 
-                        "8hr" = "8",
-                        "12hr" = "12",
-                        "24hr" = "24"
-                        ), 
-                      selected = "8"
-        )
-      ),
-      box(
-        width = NULL, status = "warning", solidHeader = TRUE, title = "",
-        sliderInput("DUR", "Infusion duration", 1,
-                    min = 0.5, max = 4, step = 0.5,
-                    width = NULL
-        )
-      ),
+      uiOutput('ddose'),
       tags$hr(),
       box(
         width = NULL, solidHeader = TRUE, title = "", status = "primary",
@@ -270,6 +240,7 @@ ui <- shiny::navbarPage(
 
 
 
+
 # main ----
 
 
@@ -283,8 +254,65 @@ server <- shiny::shinyServer(function(input, output) {
   })
   
   
+  defaultdose <- reactive({
+    CLCR <- calculate_crcl(input$age, input$weight, input$sex, input$scr)
+    case_when(CLCR >= 90 ~ 180,
+              CLCR >= 70 & CLCR < 90 ~ 150,
+              CLCR >= 50 & CLCR < 70 ~ 125,
+              CLCR >= 30 & CLCR < 50 ~ 100,
+              CLCR >= 10 & CLCR < 30 ~ 80,
+              CLCR < 10 ~ 65,
+              TRUE ~ NA_real_)
+  })
+
+  ldose <- reactive({
+    min(input$weight*5, 300)
+  })
+
+  output$ddose <- renderUI({
+    
+    
+    tagList(
+      box(
+        width = NULL, status = "warning", solidHeader = TRUE, title = "",
+        sliderInput("LDOSE", "Loading dose (mg)", ldose(),
+                    min = 0, max = 300, step = 10, ticks = TRUE,
+                    width = NULL
+        )
+      ),
+      box(
+        width = NULL, status = "warning", solidHeader = TRUE, title = "",
+        sliderInput("DOSE", "Maintenance dose (mg)", defaultdose(),
+                    min = 0, max = 300, step = 10, ticks = TRUE,
+                    width = NULL
+        )
+      ),
+      box(
+        width = NULL, status = "warning", solidHeader = TRUE, title = "",
+        radioButtons("INT", "Interval (hr)",
+                      inline = TRUE,
+                      choices = list(
+                        "6hr" = "6", 
+                        "8hr" = "8",
+                        "12hr" = "12",
+                        "24hr" = "24"
+                        ), 
+                      selected = "12"
+        )
+      ),
+      box(
+        width = NULL, status = "warning", solidHeader = TRUE, title = "",
+        sliderInput("DUR", "Infusion duration", 1,
+                    min = 0.5, max = 2, step = 0.5,
+                    width = NULL
+        )
+      )
+    )
+  })
+
+
   evt <- reactive({
-    e1 <- ev(amt = input$LDOSE, ii = 24, rate = input$LDOSE/1)
+    e1 <- ev(amt = input$LDOSE, ii = 12, rate = input$LDOSE/1)
     e2 <- ev(amt = input$DOSE, ii = as.numeric(input$INT), addl = 240/as.numeric(input$INT), rate = input$DOSE/input$DUR)
     
     seq(e1, e2)
@@ -305,7 +333,9 @@ server <- shiny::shinyServer(function(input, output) {
     
     if(input$sim == "pop"){
      
-      mrgsim_e(mod, evt(), end = 240) %>%
+      mod %>%
+        zero_re() %>%
+        mrgsim_e(evt(), end = 240) %>%
         as.data.frame()
       
     } else {
@@ -327,7 +357,7 @@ server <- shiny::shinyServer(function(input, output) {
       endtime <- 240 - as.numeric(input$INT)
       nca_24 <- sim.data() %>%
         slice(-1) %>%
-        filter(time >= 0 & time <= 24) %>%
+        filter(time >= 0 & time <= 12) %>%
         tblNCA(key = "ID", colTime = "time", colConc = "DV", dose = input$DOSE, adm = "Infusion", dur = input$DUR, doseUnit = "mg", timeUnit = "h", concUnit = "ng/mL", down = "Linear", R2ADJ = 0, MW = 0) %>%
         select(CMAX, TMAX, LAMZHL, AUCLST, AUCIFO) 
       nca_ss <- sim.data() %>%
